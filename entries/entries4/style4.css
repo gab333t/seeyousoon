@@ -1,0 +1,50 @@
+  body {
+    background-color: yellow;
+    line-height: 0.45px;
+  }
+
+  h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 225px;
+    font-weight: 145;
+    letter-spacing: 2.5px;
+    text-align: center;
+  }
+
+  h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    font-weight: 100;
+    text-align: center;
+  }
+  
+  img {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  a {
+    color: yellow;
+    text-decoration-color: black;
+  }
+
+  a:hover {
+    color: black;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .myDiv:hover + .hide {
+    display: block;
+  }
+
+
+
+
+
+
+

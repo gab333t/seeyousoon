@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(17, 22, 49);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh; 
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(2rem, 5vw, 6rem); 
+    color: rgb(211, 42, 56);
+    margin: 0; 
+    text-align: center; 
+}
+
+.textgif {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.ontop {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    width: clamp(10rem, 30vw, 20rem);
+    max-width: 250px;
+    height: auto; 
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.5rem; 
+    }
+}

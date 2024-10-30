@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url(https://24.media.tumblr.com/tumblr_mc20x7cMCx1rpj04no1_500.gif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px;
+    opacity: 0;
+    animation: fadeIn 4s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+h2{
+    text-decoration: wavy;
+    text-align: right;
+    color: #05f129;
+    font-size: 45px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: cornsilk;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: right;
+    flex-grow: unset;
+}
+
+a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #05f129;
+
+    font-size: 15px;
+    text-align: right;
+    flex-grow: unset;
+}
+
+

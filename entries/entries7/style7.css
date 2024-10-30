@@ -1,0 +1,53 @@
+body {
+    background-image: url('https://www.cameronsworld.net/img/content/2/bg.png');
+    cursor: url('https://pngimg.com/uploads/cursor/small/cursor_PNG97.png'), auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    position: relative; 
+}
+
+.ufo-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.ufo-gif {
+    width: 300px; 
+    height: auto; 
+    margin: 0 10px; 
+}
+
+.tiny5-regular {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    position: relative; 
+    color: white;
+}
+
+.earth-gif {
+    position: absolute;
+    top: 20px; 
+    left: 20px;
+}
+
+@media (max-width: 768px) {
+    .ufo-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .ufo-gif {
+        margin: 20px 0; 
+    }
+    
+    .tiny5-regular {
+        margin-bottom: 50px; 
+    }
+}

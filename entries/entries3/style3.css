@@ -1,0 +1,49 @@
+body {
+    background-image: url(https://i.makeagif.com/media/9-30-2023/S_tlvQ.gif);
+    background-position: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    line-height: 0.5;
+}
+
+.handjet-blue {
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 525;
+    font-style: normal;
+    color: rgb(212, 216, 240);
+    font-size: 35px;
+    line-height: 0.25;
+    padding: 5px;
+}
+
+.orbitron-pink {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(240, 186, 198);
+    font-size: 10w;
+    padding: 5px;
+
+}
+
+h1 {
+    font-size: 115px;
+    line-height: 0.15;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 0.05;
+    font-weight: 750;
+}
+
+h4 {
+    line-height: 0.1;
+    font-weight: 400;
+}
+
+
+  

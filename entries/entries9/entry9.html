@@ -5,69 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I Feel</title>
     <link rel="stylesheet" href="style9.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/oax0hmo.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&family=Amatic+SC:wght@400&family=Lobster&family=Russo+One&family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for home icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
-    <body>
+<body>
 
-    <h1>I Feel:</h1>
-    
-    <p id="text-circle"></p>
-    <h3 id="sub"></h3>
+<h1>I Feel:</h1>
 
-    <script>
-        const texts = [
-            "HAPPY HAPPY HAPPY HAPPY HAPPY :)",
-            "SAD SAD SAD SAD SAD SAD SAD :(",
-            "EAGER EAGER EAGER EAGER EAGER :D",
-            "STRESS STRESS STRESS STRESS :/",
-            "ANGRY ANGRY ANGRY ANGRY ANGRY >:(",
-            "LOVE LOVE LOVE LOVE LOVE LOVE <3"
-        ];
+<p id="text-circle"></p>
+<h3 id="sub"></h3>
 
-        const additionalTexts = [
-            "Happiness is the feeling ,",
-            "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean vel libero suscipit, condimentum risus sit amet, dignissim urna.",
-            "Eagerness is the feeling of  Of hearing the ice cream truck outside and rushing to make it in time. Of having an ambitious idea and wanting to execute it perfectly",
-            "Nullam fringilla erat velit, et congue sem varius ac. Ut at volutpat metus, ac laoreet magna.",
-            "Cras vehicula magna ut erat sollicitudin, ac tincidunt nunc rutrum. Nulla scelerisque lorem sed purus vulputate condimentum.",
-            "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vestibulum metus at gravida posuere."
-        ];
+<a href="https://www.example.com" class="home-button" title="Go to Home">
+    <i class="fas fa-home"></i>
+</a>
 
-        const colors = [
-            "linear-gradient(45deg, #FFEB3B, #FF9800)",  // Happy - Yellow/Orange
-            "linear-gradient(45deg, #607D8B, #455A64)",  // Sad - Grayish Blue
-            "linear-gradient(45deg, #00BCD4, #009688)",  // Eager - Turquoise
-            "linear-gradient(45deg, #9C27B0, #7B1FA2)",  // Stress - Purple
-            "linear-gradient(45deg, #F44336, #D32F2F)",  // Angry - Red
-            "linear-gradient(45deg, #FF4081, #F50057)"   // Love - Pink
-        ];
+<script>
+    const texts = [
+        "HAPPY HAPPY HAPPY HAPPY HAPPY :)",
+        "SAD SAD SAD SAD SAD SAD SAD :(",
+        "EAGER EAGER EAGER EAGER EAGER :D",
+        "STRESS STRESS STRESS STRESS :/",
+        "ANGRY ANGRY ANGRY ANGRY ANGRY >:(",
+        "LOVE LOVE LOVE LOVE LOVE LOVE <3"
+    ];
 
-        const text = document.getElementById("text-circle");
-        const subText = document.getElementById("sub");
-        let currentIndex = 0;
+    const additionalTexts = [
+        "Happiness (hap·​pi·​ness): a state of well-being and contentment, a pleasurable or satisfying experience.<br><br>Of binge watching the newest season of your favorite show. Of hanging out with your best friend after so long. Of getting your nails done at the salon.",
+        "Sadness (sad·​ness): affected with or expressive of grief or unhappiness, of little worth.<br><br>Of the current state of world and political affairs. Of when you send a really long message and they just reply with OK.",
+        "Eagerness (ea·​ger·​ness): marked by enthusiastic or impatient desire or interest.<br><br>Of finding really good clothes at the thrift store. Of having energy off of Red Bull or lattes. Of experiencing a breakthrough.",
+        "Stressful (stress·​ful): mental tension resulting from factors that tend to alter an existent equilibrium; full of or tending to induce stress.<br><br>Of having too much work for your classes.",
+        "Anger (an·​ger): a strong feeling of displeasure and usually of antagonism; a threatening or violent appearance or state.<br><br>Of having your plans cancelled at the very last minute.",
+        "Love (love): strong affection for another arising out of kinship or personal ties; affection and tenderness felt by lovers.<br><br>Of people who recognize that you don't like wearing jewelry on your left hand. Of Mexican and Thai food."
+    ];
 
-        function updateText() {
-            const newText = texts[currentIndex];
+    const colors = [
+        "linear-gradient(45deg, #f8ad4e, #f8dc5a)",  // Happy - Yellow/Orange
+        "linear-gradient(15deg, #1260ab, #454b77)",  // Sad - Grayish Blue
+        "linear-gradient(75deg, #f6b06c, #f864ad)",  // Eager - Turquoise
+        "linear-gradient(30deg, #511e57, #233429)",  // Stress - Purple
+        "linear-gradient(60deg, #bf1a1a, #fb5b64)",  // Angry - Red
+        "linear-gradient(90deg, #f39dce, #f972c3)"   // Love - Pink
+    ];
 
-            text.innerHTML = '';
-            
-            for (let i = 0; i < newText.length; i++) {
-                let span = document.createElement('span');
-                span.innerHTML = newText[i];
-                text.appendChild(span);
-                span.style.transform = `rotate(${11 * i}deg)`;
-            }
+    const fonts = [
+        "Roboto, sans-serif",
+        "Roboto, sans-serif",
+        "Roboto, sans-serif",
+        "Roboto, sans-serif",
+        "Roboto, sans-serif",
+        "Roboto, sans-serif",
+    ];
 
-            subText.innerHTML = additionalTexts[currentIndex];
+    const text = document.getElementById("text-circle");
+    const subText = document.getElementById("sub");
+    let currentIndex = 0;
 
-            document.body.style.background = colors[currentIndex];  // Change background gradient
+    function updateText() {
+        const newText = texts[currentIndex];
 
-            currentIndex = (currentIndex + 1) % texts.length;
+        text.innerHTML = '';
+        
+        for (let i = 0; i < newText.length; i++) {
+            let span = document.createElement('span');
+            span.innerHTML = newText[i];
+            text.appendChild(span);
+            span.style.transform = `rotate(${11 * i}deg)`;
+            span.style.fontFamily = fonts[currentIndex];  // Apply unique font to each text
         }
 
-        window.onload = updateText;
+        subText.innerHTML = additionalTexts[currentIndex];
 
-        document.body.addEventListener('click', updateText);
-    </script>
+        document.body.style.background = colors[currentIndex];  // Change background gradient
 
-    </body>
+        currentIndex = (currentIndex + 1) % texts.length;
+    }
+
+    window.onload = updateText;
+
+    document.body.addEventListener('click', updateText);
+</script>
+
+</body>
 </html>

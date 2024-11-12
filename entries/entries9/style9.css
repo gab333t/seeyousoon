@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: #222;
+    height: 100vh;
+    flex-direction: row;
+    transition: background 3s ease-in-out;  /* Smooth background color change */
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 72px;
+    margin-left: -800px;
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 100px;
+    margin-right: -800px;
+    max-width: 500px;
+}
+
+p {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    display: flex;
+    animation: effect 12s linear infinite;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+@media (max-width: 1200px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    h1 {
+        margin-left: 0;
+        margin-top: 75px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    h3 {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        text-align: left;
+        max-width: none;
+        width: 80%;
+    }
+}
+
+@keyframes effect {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+span {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0px 150px;
+    transform-style: flat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: white;
+}

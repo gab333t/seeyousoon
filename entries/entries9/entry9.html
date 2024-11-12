@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Feel</title>
+    <link rel="stylesheet" href="style9.css">
+</head>
+    <body>
+
+    <h1>I Feel:</h1>
+    
+    <p id="text-circle"></p>
+    <h3 id="sub"></h3>
+
+    <script>
+        const texts = [
+            "HAPPY HAPPY HAPPY HAPPY HAPPY :)",
+            "SAD SAD SAD SAD SAD SAD SAD :(",
+            "EAGER EAGER EAGER EAGER EAGER :D",
+            "STRESS STRESS STRESS STRESS :/",
+            "ANGRY ANGRY ANGRY ANGRY ANGRY >:(",
+            "LOVE LOVE LOVE LOVE LOVE LOVE <3"
+        ];
+
+        const additionalTexts = [
+            "Happiness is the feeling ,",
+            "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean vel libero suscipit, condimentum risus sit amet, dignissim urna.",
+            "Eagerness is the feeling of  Of hearing the ice cream truck outside and rushing to make it in time. Of having an ambitious idea and wanting to execute it perfectly",
+            "Nullam fringilla erat velit, et congue sem varius ac. Ut at volutpat metus, ac laoreet magna.",
+            "Cras vehicula magna ut erat sollicitudin, ac tincidunt nunc rutrum. Nulla scelerisque lorem sed purus vulputate condimentum.",
+            "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vestibulum metus at gravida posuere."
+        ];
+
+        const colors = [
+            "linear-gradient(45deg, #FFEB3B, #FF9800)",  // Happy - Yellow/Orange
+            "linear-gradient(45deg, #607D8B, #455A64)",  // Sad - Grayish Blue
+            "linear-gradient(45deg, #00BCD4, #009688)",  // Eager - Turquoise
+            "linear-gradient(45deg, #9C27B0, #7B1FA2)",  // Stress - Purple
+            "linear-gradient(45deg, #F44336, #D32F2F)",  // Angry - Red
+            "linear-gradient(45deg, #FF4081, #F50057)"   // Love - Pink
+        ];
+
+        const text = document.getElementById("text-circle");
+        const subText = document.getElementById("sub");
+        let currentIndex = 0;
+
+        function updateText() {
+            const newText = texts[currentIndex];
+
+            text.innerHTML = '';
+            
+            for (let i = 0; i < newText.length; i++) {
+                let span = document.createElement('span');
+                span.innerHTML = newText[i];
+                text.appendChild(span);
+                span.style.transform = `rotate(${11 * i}deg)`;
+            }
+
+            subText.innerHTML = additionalTexts[currentIndex];
+
+            document.body.style.background = colors[currentIndex];  // Change background gradient
+
+            currentIndex = (currentIndex + 1) % texts.length;
+        }
+
+        window.onload = updateText;
+
+        document.body.addEventListener('click', updateText);
+    </script>
+
+    </body>
+</html>

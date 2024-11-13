@@ -77,7 +77,6 @@ em {
     margin-top: -30px;
 }
 
-/* Styling for the footer text */
 .degular-small-footer {
     font-family: "degular-variable", sans-serif;
     font-variation-settings: 'ital' 0, 'opsz' 40, 'wght' 400;
@@ -86,7 +85,7 @@ em {
     margin: 0 auto;
     width: 90%;
     display: flex;
-    justify-content: center; /* Center "SYS News" text */
+    justify-content: center;
     align-items: center;
     height: 100%;
     text-align: center;
@@ -95,7 +94,6 @@ em {
     box-sizing: border-box;
 }
 
-/* Additional styling for the "Home" link */
 .home-link {
     position: absolute;
     left: 25px; 

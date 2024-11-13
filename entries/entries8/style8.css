@@ -7,8 +7,17 @@ body {
     flex-direction: column;
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
 em {
     color: rgb(49, 49, 55);
+}
+
+.dark-mode em {
+    color: white;
 }
 
 .cormorant-garamond-light {
@@ -95,8 +104,9 @@ em {
 }
 
 .home-link {
+    color: rgb(39, 39, 44);
     position: absolute;
-    left: 25px; 
+    left: 20px; 
     font-size: 18px; 
     font-weight: 400; 
 }
@@ -104,11 +114,36 @@ em {
 .home-link a {
     text-decoration: none;
     color: rgb(39, 39, 44);
-    font-weight: 400;
 }
 
 .home-link a:hover {
     color: #007BFF; 
+}
+
+.dark-mode a {
+    color: white;
+}
+
+.light-dark {
+    position: absolute;
+    right: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(39, 39, 44);
+}
+
+.light-dark a {
+    color: rgb(39, 39, 44);
+}
+
+.dark-mode .light-dark a {
+    color: white;
+}
+
+.light-dark a:hover {
+    color: #007BFF; 
+    cursor: pointer;
 }
 
 @media (max-width: 770px) {
@@ -164,10 +199,15 @@ em {
     overflow: hidden;
 }
 
+.dark-mode .marquee {
+    background-color: black;
+    color: white;
+}
+
 .marquee-content {
     display: inline-block;
     padding-left: 100%;
-    animation: marquee-top 35s linear infinite;
+    animation: marquee-top 28s linear infinite;
 }
 
 .top {
@@ -195,12 +235,17 @@ em {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #000000;
+    background-color: rgb(39, 39, 44);
     color: white;
     position: relative;
     bottom: 0;
     text-align: center;
     box-sizing: border-box;
+}
+
+.dark-mode footer {
+    background-color: white;
+    color: black;
 }
 
 div.scroll-container {

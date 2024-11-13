@@ -22,24 +22,15 @@
     <body>
         <h4 class="degular-small-footer"></h4>
         <h4 class="degular-small-footer">
-            <span class="home-link"><a href="GitHub/seeyousoon/entries/index.html">Home</a></span>
+            <span class="home-link"><a href="GitHub/seeyousoon/entries/index.html"> Return Home</a></span>
             SYS News
+            <span class="light-dark" class="ldText" onclick="lightDark()"><a>Light / Dark</a></span>
         </h4>
         <div class="marquee top">
             <div class="marquee-content">
                 <h4 class="degular-small">This is SYS News, the latest and greatest when it comes to delivering info fast and reliably. It is currently&nbsp;<span id="systemTime"></span>.</h4>
             </div>
         </div>
-        
-          <script>
-            function updateTime() {
-              const now = new Date();
-              const dateTimeString = now.toLocaleString();
-              document.getElementById('systemTime').textContent = dateTimeString;
-            }
-            updateTime();
-            setInterval(updateTime, 1000);
-          </script>
         
         <h1 class="degular-title">A MYSTERY AFOOT: HAVE YOU SEEN THIS PERSON?</h1>
         <h4 class="degular-small-footer"></h4>
@@ -163,6 +154,23 @@
         <h3 class="cormorant-garamond-light"><br><br></h3>
 
         <footer class="degular-small-footer">©. See You Soon News. All Rights Reserved.</footer>
+
+        <script>
+            function updateTime() {
+              const now = new Date();
+              const dateTimeString = now.toLocaleString();
+              document.getElementById('systemTime').textContent = dateTimeString;
+            }
+            updateTime();
+            setInterval(updateTime, 1000);
+          </script>
+
+        <script>
+            function lightDark() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+        </script>
     
     </body>
 </html>

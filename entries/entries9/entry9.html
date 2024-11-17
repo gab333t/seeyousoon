@@ -12,18 +12,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
-<body>
+    <body>
 
-<h1>I Feel:</h1>
+    <h1>I Feel:</h1>
 
-<p id="text-circle"></p>
-<h3 id="sub"></h3>
+    <p id="text-circle"></p>
+    <h3 id="sub"></h3>
 
-<a href="GitHub/seeyousoon/entries/index.html" class="home-button" title="Go to Home">
-    <i class="fas fa-home"></i>
-</a>
+    <a href="GitHub/seeyousoon/entries/index.html" class="home-button" title="Go to Home">
+        <i class="fas fa-home"></i>
+    </a>
 
-<script>
+    <script>
     const texts = [
         "HAPPY HAPPY HAPPY HAPPY HAPPY :)",
         "SAD SAD SAD SAD SAD SAD SAD :(",
@@ -78,16 +78,13 @@
         }
 
         subText.innerHTML = additionalTexts[currentIndex];
-
         document.body.style.background = colors[currentIndex]; 
-
         currentIndex = (currentIndex + 1) % texts.length;
     }
 
     window.onload = updateText;
-
     document.body.addEventListener('click', updateText);
-</script>
+    </script>
 
-</body>
+    </body>
 </html>

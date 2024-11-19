@@ -28,7 +28,7 @@ body {
 }
 
 .light {
-  background-color: papayawhip;
+  background-color: rgb(204, 204, 204);
   background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNW42NTdudXFjaW41MzUxNzNwbHEzNmp4czJuamUzcWo4ZXpxZ3YzNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HUn0zKOVpQbSVoc/giphy.webp');
   background-size: cover;
   background-position: center; 
@@ -54,8 +54,9 @@ img {
 .sentence {
   position: absolute;
   color: white;
-  font-size: 24px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-family: "VT323", monospace;
+  font-weight: 500;
   white-space: nowrap;
   opacity: 0; 
 }
@@ -71,9 +72,9 @@ img {
 
 @keyframes moveSentence {
   0% {
-    left: -100%; 
+    left: 100%; 
   }
   100% {
-    left: 100%; 
+    left: -100%; 
   }
 }

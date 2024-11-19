@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dark room hour</title>
     <link rel="stylesheet" href="style10.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">  
 </head>
 <body>
     <div class="button">
-        <img id="lightbulb" src="https://cdn1.vectorstock.com/i/1000x1000/70/00/sketch-silhouette-image-light-bulb-off-icon-vector-15087000.jpg" alt="Lightbulb Off">
+        <img id="lightbulb" src="img10/lightbulbOff.gif" alt="Lightbulb Off">
     </div>
 
     <div id="sentences-container"></div>
@@ -39,8 +42,8 @@
         function toggleLight() {
             body.classList.toggle("light");
             lightbulbIcon.src = body.classList.contains("light")
-                ? "https://content.presentermedia.com/files/clipart/00014000/14170/light_bulb_sketch_800_wht.jpg" // On
-                : "https://cdn1.vectorstock.com/i/1000x1000/70/00/sketch-silhouette-image-light-bulb-off-icon-vector-15087000.jpg"; // Off
+                ? src="img10/lightbulbOn.gif"
+                : src="img10/lightbulbOff.gif"
 
             if (body.classList.contains("light")) {
                 createSentences();
@@ -60,7 +63,7 @@
 
                 sentencesContainer.appendChild(sentenceElement);
 
-                let animationDuration = Math.random() * 5 + 5; 
+                let animationDuration = Math.random() * 10 + 12; 
                 sentenceElement.style.animation = `fadeIn 2s forwards, moveSentence ${animationDuration}s linear infinite`;
             }
         }

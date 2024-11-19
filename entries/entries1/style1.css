@@ -1,10 +1,8 @@
-/* Base styles for the body */
 body {
     background-color: #f1eee0;
     padding: 5px;
 }
 
-/* Styles for main headings (h1) */
 h1 {
     font-family: 'Segoe UI', sans-serif;
     text-align: left;
@@ -14,19 +12,16 @@ h1 {
     line-height: 0.75;
 }
 
-/* Styles for preformatted text (pre) */
 pre {
     color: #bf0f0f;
     line-height: 0.75;
 }
 
-/* Styles for inputs */
 input {
     color: #08449d;
-    font-family: 'Segoe UI', sans-serif; /* Matching font for input fields */
+    font-family: 'Segoe UI', sans-serif; 
 }
 
-/* Default display for large screens */
 .longscreen {
     display: block;
 }
@@ -42,26 +37,26 @@ input {
 
     .shortscreen {
         display: block;
-        text-align: center; /* Center content within shortscreen */
+        text-align: center;
         color: #bf0f0f;
-        font-family: 'Segoe UI', sans-serif; /* Ensure input font matches longscreen */
+        font-family: 'Segoe UI', sans-serif;
     }
 
     strong {
-        font-family: 'Segoe UI', sans-serif; /* Use the same font as longscreen */
+        font-family: 'Segoe UI', sans-serif;
     }
 
     .bird {
-        font-size: 14px; /* Reduce font size for smaller screens */
+        font-size: 14px;
         letter-spacing: 3px;
         line-height: 0.5px;
-        text-align: center; /* Center the pre blocks */
+        text-align: center; 
     }
 
     input {
-        font-size: 1rem; /* Adjust input font size */
-        font-family: 'Segoe UI', sans-serif; /* Ensure input font matches longscreen */
-        margin-left: 20px; /* Left margin for inputs */
+        font-size: 1rem; 
+        font-family: 'Segoe UI', sans-serif; 
+        margin-left: 20px;
         width: auto;
     }
 }
@@ -78,7 +73,7 @@ input {
     }
 
     strong {
-        font-family: 'Segoe UI', sans-serif; /* Use the same font as longscreen */
+        font-family: 'Segoe UI', sans-serif;
     }
 
     .subtext {
@@ -87,18 +82,17 @@ input {
     }
 
     .bird {
-        font-size: 8px; /* Reduce font size for smaller screens */
+        font-size: 8px;
         letter-spacing: 1px;
         line-height: 0.05px;
-        text-align: center; /* Center the pre blocks */
+        text-align: center;
     }
 
     input {
-        font-size: 1rem; /* Adjust input font size */
-        font-family: 'Segoe UI', sans-serif; /* Ensure input font matches longscreen */
-        margin-left: 20px; /* Left margin for inputs */
-        display: inline-block; /* Prevent inputs from centering */
-        width: auto; /* Prevent input fields from stretching */
+        font-size: 1rem;
+        font-family: 'Segoe UI', sans-serif;
+        margin-left: 20px;
+        display: inline-block;
+        width: auto; 
     }
-
 }

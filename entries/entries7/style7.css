@@ -1,6 +1,5 @@
 body {
     background-image: url('https://www.cameronsworld.net/img/content/2/bg.png');
-    cursor: url('https://pngimg.com/uploads/cursor/small/cursor_PNG97.png'), auto;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -8,6 +7,7 @@ body {
     height: 100vh; 
     margin: 0; 
     position: relative; 
+    cursor: url('img7/oldcursor.webp'), auto;
 }
 
 .ufo-container {

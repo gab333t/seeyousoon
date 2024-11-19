@@ -1,20 +1,104 @@
+/* Base styles for the body */
 body {
     background-color: #f1eee0;
     padding: 5px;
 }
-h1{
+
+/* Styles for main headings (h1) */
+h1 {
+    font-family: 'Segoe UI', sans-serif;
     text-align: left;
     color: #08449d;
     font-size: 45px;
-    font-style: bold;
-    font-family:'Segoe UI', sans-serif;
+    font-weight: bold;
     line-height: 0.75;
 }
 
-pre{
-    color:#bf0f0f;
+/* Styles for preformatted text (pre) */
+pre {
+    color: #bf0f0f;
     line-height: 0.75;
 }
-input{
-    color:#08449d
+
+/* Styles for inputs */
+input {
+    color: #08449d;
+    font-family: 'Segoe UI', sans-serif; /* Matching font for input fields */
+}
+
+/* Default display for large screens */
+.longscreen {
+    display: block;
+}
+
+.shortscreen {
+    display: none;
+}
+
+@media (max-width: 1275px) {
+    .longscreen {
+        display: none;
+    }
+
+    .shortscreen {
+        display: block;
+        text-align: center; /* Center content within shortscreen */
+        color: #bf0f0f;
+        font-family: 'Segoe UI', sans-serif; /* Ensure input font matches longscreen */
+    }
+
+    strong {
+        font-family: 'Segoe UI', sans-serif; /* Use the same font as longscreen */
+    }
+
+    .bird {
+        font-size: 14px; /* Reduce font size for smaller screens */
+        letter-spacing: 3px;
+        line-height: 0.5px;
+        text-align: center; /* Center the pre blocks */
+    }
+
+    input {
+        font-size: 1rem; /* Adjust input font size */
+        font-family: 'Segoe UI', sans-serif; /* Ensure input font matches longscreen */
+        margin-left: 20px; /* Left margin for inputs */
+        width: auto;
+    }
+}
+
+@media (max-width: 825px) {
+    .longscreen {
+        display: none;
+    }
+
+    .shortscreen {
+        display: block;
+        color: #bf0f0f;
+        font-family: 'Segoe UI', sans-serif; 
+    }
+
+    strong {
+        font-family: 'Segoe UI', sans-serif; /* Use the same font as longscreen */
+    }
+
+    .subtext {
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .bird {
+        font-size: 8px; /* Reduce font size for smaller screens */
+        letter-spacing: 1px;
+        line-height: 0.05px;
+        text-align: center; /* Center the pre blocks */
+    }
+
+    input {
+        font-size: 1rem; /* Adjust input font size */
+        font-family: 'Segoe UI', sans-serif; /* Ensure input font matches longscreen */
+        margin-left: 20px; /* Left margin for inputs */
+        display: inline-block; /* Prevent inputs from centering */
+        width: auto; /* Prevent input fields from stretching */
+    }
+
 }

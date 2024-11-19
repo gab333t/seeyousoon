@@ -3,18 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>dark room hour</title>
     <link rel="stylesheet" href="style10.css">
 </head>
-    <body>
-    
+<body>
+    <div class="button">
+        <img id="lightbulb" src="https://cdn1.vectorstock.com/i/1000x1000/70/00/sketch-silhouette-image-light-bulb-off-icon-vector-15087000.jpg" alt="Lightbulb Off">
+    </div>
 
-        <section>
-            <div class="button">
-              Click Me
-            </div>
-          </section>
-    <script type="text/javascript" src="entry10.js"></script>
+    <div id="sentences-container"></div>
 
-    </body>
+    <script>
+        let body = document.body;
+        let lightbulbIcon = document.getElementById("lightbulb");
+        let sentencesContainer = document.getElementById("sentences-container");
+
+        const sentences = [
+            "i light up when i see you",
+            "an enchanting night to rememeber",
+            "you still take me to the light",
+            "got some good nights memorized",
+            "never thought id see the light again",
+            "lets stay the night together",
+            "lost in the light for your love",
+            "holy nights on the moon",
+            "light at the end of the tunnel",
+            "in the night i dream of you",
+            "turn up the lights in here",
+            "free our minds at night",
+            "the light that shines the clouds",
+            "nights that heal our souls",
+            "keeping on the night light"
+        ];
+
+        function toggleLight() {
+            body.classList.toggle("light");
+            lightbulbIcon.src = body.classList.contains("light")
+                ? "https://content.presentermedia.com/files/clipart/00014000/14170/light_bulb_sketch_800_wht.jpg" // On
+                : "https://cdn1.vectorstock.com/i/1000x1000/70/00/sketch-silhouette-image-light-bulb-off-icon-vector-15087000.jpg"; // Off
+
+            if (body.classList.contains("light")) {
+                createSentences();
+            } else {
+                clearSentences();
+            }
+        }
+
+        function createSentences() {
+            for (let i = 0; i < 15; i++) {
+                let sentenceElement = document.createElement("div");
+                sentenceElement.classList.add("sentence");
+                sentenceElement.textContent = sentences[Math.floor(Math.random() * sentences.length)];
+                
+                let randomTop = Math.random() * 80 + 10; 
+                sentenceElement.style.top = `${randomTop}%`;
+
+                sentencesContainer.appendChild(sentenceElement);
+
+                let animationDuration = Math.random() * 5 + 5; 
+                sentenceElement.style.animation = `fadeIn 2s forwards, moveSentence ${animationDuration}s linear infinite`;
+            }
+        }
+
+        function clearSentences() {
+            sentencesContainer.innerHTML = ''; 
+        }
+
+        let button = document.querySelector(".button");
+        button.addEventListener("click", toggleLight);
+    </script>
+</body>
 </html>

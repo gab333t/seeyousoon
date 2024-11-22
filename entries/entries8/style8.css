@@ -124,6 +124,10 @@ em {
     color: white;
 }
 
+.dark-mode a:visited {
+    color:rgb(39, 39, 44);
+}
+
 .light-dark {
     position: absolute;
     right: 20px;

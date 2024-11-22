@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style12.css">
+  <title>Random BG Color on Click</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="button">
+      New Color
+    </div>
+  </div>
+  <script>
+
+
+let button = document.querySelector(".button");
+let colors = ["#255c34", "#726756", "#703a56", "#953e00"];
+let body = document.querySelector("body");
+
+function newColor() {
+  let randIndex = Math.floor(Math.random() * colors.length);
+  let randColor = colors[randIndex];
+  body.style.backgroundColor = randColor;
+}
+
+button.addEventListener("click", newColor);
+
+  </script>
+</body>
+</html>

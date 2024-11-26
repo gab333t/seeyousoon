@@ -2,4 +2,8 @@ body {
     line-height: 2.5;
     margin-left: 20px;
     background-color: rgb(185, 185, 185);
+    background-image: url(imgi/background.jpg);
+    background-size:     cover;            
+    background-repeat:   no-repeat;
+    background-position: center center;
 }

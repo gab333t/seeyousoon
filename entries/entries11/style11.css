@@ -1,14 +1,56 @@
 body {
-    background-color:  blue;
-    color:  white;
-    font-family: monospace;
+    background-color: #ea0a0a;
+    font-family: 'Arial', sans-serif;
+    rotate: 80deg;
+    position: static;
   }
   
-  h1 {
-    font-weight:  normal;
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
   }
-
-
-.red {
-    background-color: red;
+  
+  .scroll {
+    white-space: nowrap;
+  }
+  
+  .scroll div {
+    display: flex;
+    gap: 2em;
+  }
+  
+  .scroll p {
+    font-size: 5em;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 10px;
+  }
+  
+  .RightToLeft {
+    animation: RightToLeft 90s infinite linear;
+  }
+  
+  @keyframes  RightToLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .LeftToRight {
+    padding: center;
+    animation: LeftToRight 90s infinite linear;
+  }
+  
+  @keyframes  LeftToRight {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0%);
+    }
   }

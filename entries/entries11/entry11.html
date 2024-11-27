@@ -8,6 +8,12 @@
 </head>
 
 <body>
+
+    <!-- Home button -->
+    <div class="home-button">
+        <a href="https://gab333t.github.io/seeyousoon/entries/index.html" id="home-link"></a>
+    </div>
+
     <div class="container">
         <div class="scroll">
           <div class="RightToLeft">
@@ -50,58 +56,18 @@
             <p>SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS</p>
             <p>SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS</p>
           </div>
-          <div class="RightToLeft">
-            <p>SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS</p>
-            <p>SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS</p>
-          </div>
-          <div class="LeftToRight">
-            <p>SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS</p>
-            <p>SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS</p>
-          </div>
-          <div class="RightToLeft">
-            <p>SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS</p>
-            <p>SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS</p>
-          </div>
-          <div class="LeftToRight">
-            <p>SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS</p>
-            <p>SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS</p>
-          </div>
-          <div class="RightToLeft">
-            <p>SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS</p>
-            <p>SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS</p>
-          </div>
-          <div class="LeftToRight">
-            <p>SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS</p>
-            <p>SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS</p>
-          </div>
-          <div class="RightToLeft">
-            <p>SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS</p>
-            <p>SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS</p>
-          </div>
-          <div class="LeftToRight">
-            <p>SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS</p>
-            <p>SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS</p>
-          </div>
-          <div class="RightToLeft">
-            <p>SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS</p>
-            <p>SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS SCUMBAGS</p>
-          </div>
-          <div class="LeftToRight">
-            <p>SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS</p>
-            <p>SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS SUPERSTARS</p>
-          </div>
         </div>
-      </div>
+    </div>
 
-  <script>
-    let body = document.body;
-    let headlines = document.querySelectorAll("p");
+    <script>
 
-    headlines.forEach(function(headline) {
-      headline.addEventListener('click', function (event) {
-        headline.classList.toggle("red");
-      });
-    });
-  </script>
+        document.getElementById('change').onclick = changeColor;   
+    
+        function changeColor() {
+            document.body.style.color = "purple";
+            return false;
+        }   
+    
+    </script>
 </body>
 </html>

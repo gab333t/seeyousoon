@@ -27,8 +27,9 @@ h2{
     text-decoration: wavy;
     text-align: right;
     color: #05f129;
-    font-size: 45px;
+    font-size: 46px;
     font-style: italic;
+    letter-spacing: -0.5px;
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
@@ -52,11 +53,13 @@ a{
 
 @media (max-width: 600px) {
     h2 {
-        font-size: 35px;
+        font-size: 38px;
+        letter-spacing: -1.5px;
     }
     h4 {
         font-size: 12px;
         line-height: 1.7;
+        letter-spacing: -0.5px;
     }
     a{
         font-size: 12px;

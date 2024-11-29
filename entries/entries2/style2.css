@@ -70,7 +70,7 @@ a{
     }
 }
 
-@media (max-width: 392px) {
+@media (max-width: 395px) {
     h2 {
         font-size: 33px;
     }
@@ -83,7 +83,7 @@ a{
         font-size: 10.5px;
     }
     html, body {
-        margin-top: -5px;
+        margin-top: -12px;
         margin-right: -9px;
     }
 }

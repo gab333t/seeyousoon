@@ -1,13 +1,20 @@
 body {
     margin: 0;
     height: 100vh;
-    background-image: url(https://24.media.tumblr.com/tumblr_mc20x7cMCx1rpj04no1_500.gif);
+    background-image: url(img2/background.gif);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding: 50px;
     opacity: 0;
     animation: fadeIn 4s forwards;
+}
+
+html, body {
+    margin: 0; 
+    height: 100%;
+    overflow: hidden;
+    margin-top: -5px;
 }
 
 @keyframes fadeIn {
@@ -43,4 +50,19 @@ a{
     flex-grow: unset;
 }
 
-
+@media (max-width: 600px) {
+    h2 {
+        font-size: 35px;
+    }
+    h4 {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+    a{
+        font-size: 12px;
+    }
+    html, body {
+        margin-top: 12px;
+        margin-right: -10px;
+    }
+}

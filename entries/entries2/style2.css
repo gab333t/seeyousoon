@@ -65,7 +65,7 @@ a{
         font-size: 12px;
     }
     html, body {
-        margin-top: 12px;
+        margin-top: -10px;
         margin-right: -10px;
     }
 }

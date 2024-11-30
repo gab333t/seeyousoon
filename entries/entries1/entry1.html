@@ -70,16 +70,24 @@
             <pre> </pre>
         </div>
         <div class="subtext">
-            FROM <input type="text" id="fromEmailShort"><br>
-            TO <input type="text" id="toEmailShort"><br><br>
-            WE WILL PROCESS<br>
-            EVERY ORDER WITH<br>
-            UTMOST CARE & PRIORITY<br>
+            <div class="sec1">
+                FROM <input type="text" id="fromEmailShort"><br>
+                TO   <input type="text" id="toEmailShort"><br><br>
+            </div>
+            <div class="sec2">
+                WE WILL PROCESS<br>
+                EVERY ORDER WITH<br>
+                UTMOST CARE & PRIORITY<br><br>
+            </div>
+            <div class="sec3">
             SEE YOU SOON <input type="checkbox" id="sendEmailShort"><br>
+            </div>
         </div>
         <hr>
         <h1>DECEMBER 2023</h1>
     </div>
+
+    <h4>CLICK EYE TO RETURN HOME</h4>
 
     <a id="hiddenMailtoLink" href="#" style="display: none;"></a>
 
@@ -101,8 +109,8 @@
                 if (fromEmail && toEmail) {
 
                     var subject = "Priority Mail";
-                    var body = "Hello, \n\nHere is the image you requested: \n\nPlease find the image link below:\n\n" +
-                        "img1/grain.png";
+                    var body = "Hello, \n\nToday, I found my wings.\n\n" +
+                        url('img1/grain.png');
 
 
                     var mailtoLink = "mailto:" + toEmail + 
@@ -128,7 +136,7 @@
                 if (fromEmail && toEmail) {
 
                     var subject = "Priority Mail";
-                    var body = "Hello,\n\nToday I finally found my wings.\n\nLet me help you find yours.\n\n" +
+                    var body = "Hello,\n\nToday, I found my wings.\n\n" +
                         url('img1/grain.png');
 
                     var mailtoLink = "mailto:" + toEmail + 
@@ -139,7 +147,7 @@
                     hiddenLink.setAttribute("href", mailtoLink);
                     hiddenLink.click();
                 } else {
-                    alert('Please enter both from and to email addresses.');
+                    alert('Enter an email address in the "From" and "To" textboxes.');
                     this.checked = false; 
                 }
             }

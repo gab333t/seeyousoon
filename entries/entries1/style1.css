@@ -1,5 +1,6 @@
 body {
     background-color: #f1eee0;
+    background-image: url(img1/grain.png);
     padding: 5px;
 }
 
@@ -7,7 +8,7 @@ h1 {
     font-family: 'Segoe UI', sans-serif;
     text-align: left;
     color: #08449d;
-    font-size: 45px;
+    font-size: 48px;
     font-weight: bold;
     line-height: 0.75;
 }
@@ -28,6 +29,11 @@ input {
 
 .shortscreen {
     display: none;
+}
+
+hr {
+    margin-top: -30px;
+    margin-bottom: 5px;
 }
 
 @media (max-width: 1275px) {
@@ -58,6 +64,10 @@ input {
         font-family: 'Segoe UI', sans-serif; 
         margin-left: 20px;
         width: auto;
+    }
+
+    h1 {
+        font-size: 38px;
     }
 }
 
@@ -94,5 +104,9 @@ input {
         margin-left: 20px;
         display: inline-block;
         width: auto; 
+    }
+
+    h1 {
+        font-size: 30px;
     }
 }

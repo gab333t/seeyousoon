@@ -9,31 +9,31 @@
 </head>
 <body>
 
-    <!-- Long screen div (for larger screens) -->
     <div class="longscreen">
-      <h1>FOR DOMESTIC & INTERNATIONAL USE ONLY</h1>
-      <pre> </pre>
-      <hr>
-      <pre><strong>                                                     -- -- --</strong></pre>
-      <pre><strong>                                                  /            \ __ __</strong></pre>
-      <pre><strong>                                                 |     <input type="radio">      | __ /</strong></pre>
-      <pre><strong>                __ -- -- -- -- -- -- __           \   /\       /           __ -- -- -- -- -- -- __                                FROM <input type="text" value=""></strong></pre>
-      <pre><strong>          __ --                         -- -- -- __  /  \      __ -- -- --                         -- __                               TO <input type="text" value=""></strong></pre>
-      <pre><strong>       --                                            \__/                                                --</strong></pre>
-      <pre><strong>     --                                                                                                    --</strong></pre>  
-      <pre><strong>   --                                                                                                        --</strong></pre>
-      <pre><strong>  --                                                                                                          --                          WE WILL PROCESS</strong></pre>
-      <pre><strong>  --                    |                 |                              |                 |                   --                         EVERY ORDER WITH</strong></pre>
-      <pre><strong>  --        |          /                 /    --__              __--      \                 \          |       --                         UTMOST CARE & PRIORITY</strong></pre>
-      <pre><strong>   --     --         -- --            --         /  |        |  \           --            -- --         --    --</strong></pre>
-      <pre><strong>       --   --      --    --        -- --       /   |  |  |  |   \         -- --        --    --     --   --</strong></pre>
-      <pre><strong>              -- --         -- __ --    -- __  /    |  |  |  |    \  __ --      -- __ --        -- --</strong></pre>
-      <pre><strong>                                             -/    /   |  |   \    \-                                                             SEE YOU SOON <input type="checkbox"></strong></pre>
-      <pre><strong>                                             /   /    /    \    \   \</strong></pre>
-      <pre><strong>                                            /__ __ -- --  -- -- __ __\</strong></pre>
-      <pre> </pre>
-      <hr>
-      <h1>DECEMBER 2023</h1>
+        <h1>FOR DOMESTIC & INTERNATIONAL USE ONLY</h1>
+        <pre> </pre>
+        <hr>
+        <pre><strong>                                                     -- -- --</strong></pre>
+        <pre><strong>                                                  /            \ __ __</strong></pre>
+        <pre><strong>                                                 |     <input type="radio">      | __ /</strong></pre>
+        <pre><strong>                __ -- -- -- -- -- -- __           \   /\       /           __ -- -- -- -- -- -- __                                FROM <input type="text" id="fromEmail"></strong></pre>
+        <pre><strong>          __ --                         -- -- -- __  /  \      __ -- -- --                         -- __                               TO <input type="text" id="toEmail"></strong></pre>
+        <pre><strong>       --                                            \__/                                                --</strong></pre>
+        <pre><strong>     --                                                                                                    --</strong></pre>  
+        <pre><strong>   --                                                                                                        --</strong></pre>
+        <pre><strong>  --                                                                                                          --                          WE WILL PROCESS</strong></pre>
+        <pre><strong>  --                    |                 |                              |                 |                   --                         EVERY ORDER WITH</strong></pre>
+        <pre><strong>  --        |          /                 /    --__              __--      \                 \          |       --                         UTMOST CARE & PRIORITY</strong></pre>
+        <pre><strong>   --     --         -- --            --         /  |        |  \           --            -- --         --    --</strong></pre>
+        <pre><strong>       --   --      --    --        -- --       /   |  |  |  |   \         -- --        --    --     --   --</strong></pre>
+        <pre><strong>              -- --         -- __ --    -- __  /    |  |  |  |    \  __ --      -- __ --        -- --</strong></pre>
+        <pre><strong>                                             -/    /   |  |   \    \-                                                             SEE YOU SOON <input type="checkbox" id="sendEmail"></strong></pre>
+        <pre><strong>                                             /   /    /    \    \   \</strong></pre>
+        <pre><strong>                                            /__ __ -- --  -- -- __ __\</strong></pre>
+        <pre> </pre>
+        <br>
+        <hr>
+        <h1>DECEMBER 2023</h1>
     </div>
 
     <div class="shortscreen">
@@ -62,16 +62,79 @@
             <pre> </pre>
         </div>
         <div class="subtext">
-            FROM <input type="text" value=""><br>
-            TO <input type="text" value=""><br>
+            FROM <input type="text" id="fromEmailShort"><br>
+            TO <input type="text" id="toEmailShort"><br>
             WE WILL PROCESS<br>
             EVERY ORDER WITH<br>
             UTMOST CARE & PRIORITY<br>
-            SEE YOU SOON <input type="checkbox"><br>
+            SEE YOU SOON <input type="checkbox" id="sendEmailShort"><br>
         </div>
         <hr>
         <h1>DECEMBER 2023</h1>
     </div>
+
+    <!-- Hidden mailto link -->
+    <a id="hiddenMailtoLink" href="#" style="display: none;"></a>
+
+    <script>
+        // Function to trigger the mailto link when the checkbox is checked
+        document.getElementById("sendEmail").addEventListener("change", function() {
+            if (this.checked) {
+                var fromEmail = document.getElementById("fromEmail").value;
+                var toEmail = document.getElementById("toEmail").value;
+
+                // Make sure both emails are entered
+                if (fromEmail && toEmail) {
+                    // Create the mailto link with the subject and body
+                    var subject = "Your Requested Image";
+                    var body = "Hello, \n\nHere is the image you requested: \n\nPlease find the image link below:\n\n" +
+                        "img1/grain.png";
+
+                    // Create the mailto link
+                    var mailtoLink = "mailto:" + toEmail + 
+                        "?subject=" + encodeURIComponent(subject) + 
+                        "&body=" + encodeURIComponent(body);
+
+                    // Trigger the email client to open by clicking a hidden link
+                    var hiddenLink = document.getElementById("hiddenMailtoLink");
+                    hiddenLink.setAttribute("href", mailtoLink);
+                    hiddenLink.click();
+                } else {
+                    alert('Please enter both from and to email addresses.');
+                    this.checked = false; // Uncheck if not filled
+                }
+            }
+        });
+
+        // Short screen version (same functionality)
+        document.getElementById("sendEmailShort").addEventListener("change", function() {
+            if (this.checked) {
+                var fromEmail = document.getElementById("fromEmailShort").value;
+                var toEmail = document.getElementById("toEmailShort").value;
+
+                // Ensure both emails are entered
+                if (fromEmail && toEmail) {
+                    // Create the mailto link with the subject and body
+                    var subject = "Your Requested Image";
+                    var body = "Hello, \n\nHere is the image you requested: \n\nPlease find the image link below:\n\n" +
+                        "img1/grain.png";
+
+                    // Create the mailto link
+                    var mailtoLink = "mailto:" + toEmail + 
+                        "?subject=" + encodeURIComponent(subject) + 
+                        "&body=" + encodeURIComponent(body);
+
+                    // Trigger the email client to open by clicking a hidden link
+                    var hiddenLink = document.getElementById("hiddenMailtoLink");
+                    hiddenLink.setAttribute("href", mailtoLink);
+                    hiddenLink.click();
+                } else {
+                    alert('Please enter both from and to email addresses.');
+                    this.checked = false; // Uncheck if not filled
+                }
+            }
+        });
+    </script>
 
 </body>
 </html>

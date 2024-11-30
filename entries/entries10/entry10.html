@@ -6,16 +6,22 @@
     <title>See You Soon – lone dark room</title>
     <link rel="stylesheet" href="style10.css">
     <link rel="shortcut icon" href="img10/favicon10.ico" type="image/x-icon" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">  
 </head>
-    <body>
-
-    <div class="button">
-        <img id="lightbulb" src="img10/lightbulbOff.gif" alt="Lightbulb Off">
+<body>
+    <div class="header">
+        <div class="button">
+            <img id="lightbulb" src="img10/lightbulbOff.gif" alt="Lightbulb bulb, click to switch window preview">
+        </div>
     </div>
+
+    <h2 id="broadcast-text">this is the "lone dark room."<br>live broadcasting has been interrupted.<br>our apologies ... we'll see you again soon.</h2>
+
+    <a href="https://gab333t.github.io/seeyousoon/entries/index.html" class="home-button">
+        <img id="home-button" src="img10/homeOff.gif" alt="Click to return to homepage">
+    </a>
 
     <div id="sentences-container"></div>
 
@@ -23,10 +29,12 @@
         let body = document.body;
         let lightbulbIcon = document.getElementById("lightbulb");
         let sentencesContainer = document.getElementById("sentences-container");
+        let homeButtonImage = document.getElementById("home-button");
+        let broadcastText = document.getElementById("broadcast-text");
 
         const sentences = [
             "i light up when i see you",
-            "an enchanting night to rememeber",
+            "an enchanting night to remember",
             "you still take me to the light",
             "got some good nights memorized",
             "never thought i'd see the light again",
@@ -45,13 +53,19 @@
         function toggleLight() {
             body.classList.toggle("light");
             lightbulbIcon.src = body.classList.contains("light")
-                ? src="img10/lightbulbOn.gif"
-                : src="img10/lightbulbOff.gif"
+                ? "img10/lightbulbOn.gif"
+                : "img10/lightbulbOff.gif";
+
+            homeButtonImage.src = body.classList.contains("light")
+                ? "img10/homeOn.gif"
+                : "img10/homeOff.gif";
 
             if (body.classList.contains("light")) {
                 createSentences();
+                broadcastText.style.display = "none";
             } else {
                 clearSentences();
+                broadcastText.style.display = "block";
             }
         }
 
@@ -60,24 +74,23 @@
                 let sentenceElement = document.createElement("div");
                 sentenceElement.classList.add("sentence");
                 sentenceElement.textContent = sentences[Math.floor(Math.random() * sentences.length)];
-                
-                let randomTop = Math.random() * 80 + 10; 
+
+                let randomTop = Math.random() * 80 + 10;
                 sentenceElement.style.top = `${randomTop}%`;
 
                 sentencesContainer.appendChild(sentenceElement);
 
-                let animationDuration = Math.random() * 10 + 12; 
+                let animationDuration = Math.random() * 10 + 12;
                 sentenceElement.style.animation = `fadeIn 2s forwards, moveSentence ${animationDuration}s linear infinite`;
             }
         }
 
         function clearSentences() {
-            sentencesContainer.innerHTML = ''; 
+            sentencesContainer.innerHTML = '';
         }
 
         let button = document.querySelector(".button");
         button.addEventListener("click", toggleLight);
     </script>
-
-    </body>
+</body>
 </html>

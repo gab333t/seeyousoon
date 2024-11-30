@@ -5,7 +5,38 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  transition: background-color 0.3s ease;
+  flex-direction: column;
+  position: relative;
+  transition: background-color 0.2s ease, background-image 0.2s ease;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  font-family: "VT323", monospace;
+  color: white;
+  position: absolute;
+  font-size: 25px;
+  font-weight: 200;
+  left: 110px;
+  bottom: 8px;
+  width: auto;
+  text-align: left;
+  display: block;
+  transition: color 0.2s ease;
 }
 
 .button {
@@ -15,7 +46,6 @@ body {
   background-color: transparent;
   cursor: pointer;
   padding: 20px;
-  border-radius: 50%;
   transition: transform 0.2s ease;
 }
 
@@ -23,22 +53,31 @@ body {
   transform: scale(1.1);
 }
 
-.buttonOn {
-  background-color: black;
+.home-button {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  transform: scale(1.1);
 }
 
 .light {
-  background-color: rgb(204, 204, 204);
-  background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNW42NTdudXFjaW41MzUxNzNwbHEzNmp4czJuamUzcWo4ZXpxZ3YzNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HUn0zKOVpQbSVoc/giphy.webp');
+  background-color: #8f8f8f;
+  background-image: url(img10/background.gif);
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
+  transition: background-color 0.2s ease, background-image 0.2s ease;
 }
 
 img {
-  width: 50px;
-  height: 50px;
-  transition: opacity 0.3s ease;
+  width: 75px;
+  height: 75px;
+  transition: opacity 0.3s ease, transform 0.2s ease;
 }
 
 #sentences-container {
@@ -56,7 +95,7 @@ img {
   color: white;
   font-size: 30px;
   font-family: "VT323", monospace;
-  font-weight: 500;
+  font-weight: 450;
   white-space: nowrap;
   opacity: 0; 
 }
@@ -76,5 +115,29 @@ img {
   }
   100% {
     left: -100%; 
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 15px;
+    font-weight: 175;
+    left: 72px;
+    bottom: 11px;
+  }
+
+  .sentence {
+    font-size: 25px;
+    font-weight: 450px;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .home-button {
+    left: 14px;
+    bottom: 14px;
   }
 }

@@ -26,6 +26,7 @@
     <div id="sentences-container"></div>
 
     <script>
+
         let body = document.body;
         let lightbulbIcon = document.getElementById("lightbulb");
         let sentencesContainer = document.getElementById("sentences-container");
@@ -91,6 +92,17 @@
 
         let button = document.querySelector(".button");
         button.addEventListener("click", toggleLight);
+
+        window.addEventListener("resize", function() {
+            if (window.innerWidth <= 600) {
+                window.scrollTo(0, document.body.scrollHeight);
+            }
+        });
+
+        if (window.innerWidth <= 600) {
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+
     </script>
 </body>
 </html>

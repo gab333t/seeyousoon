@@ -2,9 +2,6 @@ body {
     line-height: 2.5;
     margin-left: 20px;
     background-color: rgb(209, 209, 209);
-    background-size: cover;            
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 h1 {

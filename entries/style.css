@@ -63,6 +63,10 @@ h1 {
         width: 35%;
         height: auto;
     }
+
+    #hover-text {
+        display: block;
+    }
 }
 
 @media (max-width: 500px) {
@@ -74,5 +78,9 @@ h1 {
         width: 25%;
         height: auto;
         padding: 5px;
+    }
+
+    #hover-text {
+        display: block;
     }
 }

@@ -6,6 +6,14 @@
     <title>See You Soon – Priority Mail</title>
     <link rel="stylesheet" href="style1.css">
     <link rel="shortcut icon" href="img1/favicon1.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -15,7 +23,7 @@
         <hr>
         <pre><strong>                                                     -- -- --</strong></pre>
         <pre><strong>                                                  /            \ __ __</strong></pre>
-        <pre><strong>                                                 |     <input type="radio">      | __ /</strong></pre>
+        <pre><strong>                                                 |     <input type="radio" class="redirectRadio" data-url="https://gab333t.github.io/seeyousoon/entries/index.html">      | __ /</strong></pre>
         <pre><strong>                __ -- -- -- -- -- -- __           \   /\       /           __ -- -- -- -- -- -- __                                FROM <input type="text" id="fromEmail"></strong></pre>
         <pre><strong>          __ --                         -- -- -- __  /  \      __ -- -- --                         -- __                               TO <input type="text" id="toEmail"></strong></pre>
         <pre><strong>       --                                            \__/                                                --</strong></pre>
@@ -44,7 +52,7 @@
         <div class= "bird">
             <pre><strong>-- -- --</strong></pre>
             <pre><strong>       /           \ __ __</strong></pre>
-            <pre><strong>      | <input type="radio">      | __ /</strong></pre>
+            <pre><strong>      | <input type="radio" class="redirectRadio" data-url="https://gab333t.github.io/seeyousoon/entries/index.html">      | __ /</strong></pre>
             <pre><strong>__  -- -- -- -- -- -- __           \   /\       /           __ -- -- -- -- -- -- __ </strong></pre>
             <pre><strong>__ --                         -- -- -- __  /  \      __ -- -- --                         -- __ </strong></pre>
             <pre><strong>--                                            \__/                                                --</strong></pre>
@@ -63,7 +71,7 @@
         </div>
         <div class="subtext">
             FROM <input type="text" id="fromEmailShort"><br>
-            TO <input type="text" id="toEmailShort"><br>
+            TO <input type="text" id="toEmailShort"><br><br>
             WE WILL PROCESS<br>
             EVERY ORDER WITH<br>
             UTMOST CARE & PRIORITY<br>
@@ -73,34 +81,40 @@
         <h1>DECEMBER 2023</h1>
     </div>
 
-    <!-- Hidden mailto link -->
     <a id="hiddenMailtoLink" href="#" style="display: none;"></a>
 
     <script>
-        // Function to trigger the mailto link when the checkbox is checked
+        document.querySelectorAll('.redirectRadio').forEach(function(radioButton) {
+            radioButton.addEventListener('change', function() {
+                var url = this.getAttribute('data-url');
+                if (url) {
+                    window.location.href = url;
+                }
+            });
+        });
+
         document.getElementById("sendEmail").addEventListener("change", function() {
             if (this.checked) {
                 var fromEmail = document.getElementById("fromEmail").value;
                 var toEmail = document.getElementById("toEmail").value;
 
-                // Make sure both emails are entered
                 if (fromEmail && toEmail) {
-                    // Create the mailto link with the subject and body
-                    var subject = "Your Requested Image";
+
+                    var subject = "Priority Mail";
                     var body = "Hello, \n\nHere is the image you requested: \n\nPlease find the image link below:\n\n" +
                         "img1/grain.png";
 
-                    // Create the mailto link
+
                     var mailtoLink = "mailto:" + toEmail + 
                         "?subject=" + encodeURIComponent(subject) + 
                         "&body=" + encodeURIComponent(body);
 
-                    // Trigger the email client to open by clicking a hidden link
+    
                     var hiddenLink = document.getElementById("hiddenMailtoLink");
                     hiddenLink.setAttribute("href", mailtoLink);
                     hiddenLink.click();
                 } else {
-                    alert('Please enter both from and to email addresses.');
+                    alert('Enter an email address in the "From" and "To" textboxes.');
                     this.checked = false;
                 }
             }
@@ -114,8 +128,8 @@
                 if (fromEmail && toEmail) {
 
                     var subject = "Priority Mail";
-                    var body = "Test\n\nHTest 2\n\nTest 3\n\n" +
-                        url(img1/grain.png);
+                    var body = "Hello,\n\nToday I finally found my wings.\n\nLet me help you find yours.\n\n" +
+                        url('img1/grain.png');
 
                     var mailtoLink = "mailto:" + toEmail + 
                         "?subject=" + encodeURIComponent(subject) + 

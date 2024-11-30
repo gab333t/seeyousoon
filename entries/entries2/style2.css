@@ -2,6 +2,7 @@ body {
     margin: 0;
     height: 100vh;
     background-image: url(img2/background.gif);
+    background-color: #05f129;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -14,8 +15,14 @@ html, body {
     margin: 0; 
     height: 100%;
     overflow: hidden;
-    margin-top: -5px;
+    margin-top: -10px;
 }
+
+.home {
+    display: block;
+    margin-left: auto;
+    margin-bottom: -20px;
+  }
 
 @keyframes fadeIn {
     to {
@@ -27,7 +34,7 @@ h2{
     text-decoration: wavy;
     text-align: right;
     color: #05f129;
-    font-size: 46px;
+    font-size: 45px;
     font-style: italic;
     letter-spacing: -0.5px;
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
@@ -35,8 +42,8 @@ h2{
 
 h4{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: cornsilk;
-    font-size: 15px;
+    color: #fff8dc;
+    font-size: 13px;
     line-height: 1.5;
     text-align: right;
     flex-grow: unset;
@@ -46,10 +53,29 @@ a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #05f129;
 
-    font-size: 15px;
+    font-size: 13px;
     text-align: right;
     flex-grow: unset;
 }
+
+.train {
+    position: fixed;
+    width: 300px;
+    height: auto;
+    bottom: 10px;
+    right: -400px;
+    animation: moveTrain 16s linear infinite;
+}
+
+@keyframes moveTrain {
+    0% {
+        right: -400px;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
 
 @media (max-width: 600px) {
     h2 {
@@ -68,6 +94,10 @@ a{
         margin-top: -10px;
         margin-right: -10px;
     }
+    .train {
+        bottom: 18px;
+        animation: moveTrain 10s linear infinite;
+    }
 }
 
 @media (max-width: 450px) {
@@ -85,6 +115,10 @@ a{
     html, body {
         margin-top: -5px;
         margin-right: -9px;
+    }
+    .train {
+        bottom: 24px;
+        animation: moveTrain 7.5s linear infinite;
     }
 }
 

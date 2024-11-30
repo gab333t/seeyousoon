@@ -10,10 +10,6 @@ body {
   transition: background-color 0.2s ease, background-image 0.2s ease;
 }
 
-html, body {
-  overflow: hidden;
-}
-
 .header {
   display: flex;
   justify-content: center;

@@ -1,75 +1,130 @@
-  body {
-    background-color: yellow;
-    line-height: 0.45px;
-  }
+body {
+  background-color: yellow;
+  line-height: 0.45px;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
 
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 225px;
+  font-weight: 145;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+
+h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 45px;
+  font-weight: 150;
+  text-align: center;
+  margin-top: -40px;
+}
+
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  padding: 0;
+  margin-top: 32px;
+  margin-left: 7px;
+  opacity: 0;
+}
+
+img {
+  width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+}
+
+a {
+  color: yellow;
+  text-decoration-color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+
+.baden:hover + .hide {
+  display: block;
+}
+
+.home {
+  position: fixed;
+  top: 50px;
+  left: 20px;
+}
+
+.home:hover + h5 {
+  opacity: 1;
+}
+
+h5 {
+  position: fixed;
+  top: 10px;
+  left: 55px; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 1040px) {
   h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 225px;
-    font-weight: 145;
-    letter-spacing: 2.5px;
-    text-align: center;
-  }
-
-  h6 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 45px;
-    font-weight: 100;
-    text-align: center;
-    margin-top: -40px;
-  }
-  
-  img {
-    width: 40%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -30px;
-  }
-
-  a {
-    color: yellow;
-    text-decoration-color: black;
-  }
-
-  a:hover {
-    color: black;
-  }
-
-  .hide {
-    display: none;
-  }
-
-  .myDiv:hover + .hide {
-    display: block;
-  }
-
-  @media (max-width: 1040px) {
-    h2 {
       font-size: 175px;
       font-weight: 130;
       margin-top: 200px;
-    }
+      margin-bottom: 125px;
+      letter-spacing: -2px;
+  }
 
-    h6 {
+  h6 {
       font-size: 32px;
-      font-weight: 80;
+      font-weight: 150;
       margin-top: 18px;
-    }
+  }
 
-    img {
+  img {
       width: 50%;
       margin-top: 5px;
-    }
   }
 
-  @media (max-width) {
+  .home {
+    margin-top: -35px;
+  }
+}
 
+@media (max-width: 750px) {
+  h2 {
+      font-size: 150px;
+      line-height: 130px;
+      font-weight: 200;
+      margin-top: 80px;
+      margin-bottom: 40px;
+      letter-spacing: -3px;
+  }
+
+  h6 {
+      font-size: 28px;
+      line-height: 40px;
+      font-weight: 100;
+      margin-top: 20px;
+  }
+
+  img {
+      width: 70%;
+      margin-top: -25px;
+  }
+
+  .home {
+    margin-top: -5px;
   }
 
 
-
-
-
-
-
+}

@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://i.makeagif.com/media/9-30-2023/S_tlvQ.gif);
+    background-image: url(img3/background.gif);
     background-position: initial;
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,10 +12,11 @@ body {
     font-optical-sizing: auto;
     font-weight: 525;
     font-style: normal;
-    color: rgb(212, 216, 240);
+    color: #cad0f7;
     font-size: 35px;
     line-height: 0.25;
     padding: 5px;
+    margin-left: 30px;
 }
 
 .orbitron-pink {
@@ -30,19 +31,39 @@ body {
 
 h1 {
     font-size: 115px;
-    line-height: 0.15;
+    line-height: 100px;
     font-weight: 900;
+    margin-top: -20px;
+    margin-bottom: -20px;
 }
 
 h2 {
     font-size: 30px;
     line-height: 0.05;
     font-weight: 750;
+    margin-top: 18px;
 }
 
 h4 {
-    line-height: 0.1;
+    line-height: 20px;
     font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        margin-top: -10px;
+        font-size: 50px;
+        line-height: 50px;
+        font-weight: 1200;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .handjet-blue {
+        margin-left: 10px;
+    }
 }
 
 

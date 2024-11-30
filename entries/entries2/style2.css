@@ -2,7 +2,7 @@ body {
     margin: 0;
     height: 100vh;
     background-image: url(img2/background.gif);
-    background-color: #fff8dc;
+    background-color: #191919;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -101,7 +101,7 @@ a{
     .train {
         bottom: 18px;
         width: 250px;
-        animation: moveTrain 10s linear infinite;
+        animation: moveTrain 12s linear infinite;
     }
 }
 
@@ -129,7 +129,7 @@ a{
     .train {
         bottom: 22px;
         width: 225px;
-        animation: moveTrain 7.5s linear infinite;
+        animation: moveTrain 10s linear infinite;
     }
 }
 

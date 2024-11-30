@@ -100,22 +100,20 @@
                 }
             });
         });
-    
+
         document.getElementById("sendEmail").addEventListener("change", function() {
             if (this.checked) {
                 var fromEmail = document.getElementById("fromEmail").value;
                 var toEmail = document.getElementById("toEmail").value;
-    
+
                 if (fromEmail && toEmail) {
                     var subject = "Priority Mail";
-                    var body = "Hello, \n\nToday, I found my wings.\n\n" +
-                        "This is what I saw:\n\n" + 
-                        url('img1/grain.png');
-                    
+                    var body = "Hello, \n\nToday, I found my wings.\n\nThis is what I saw:\n\n<img src='img1/grain.png'/>";  // Correct image URL format
+
                     var mailtoLink = "mailto:" + toEmail + 
                         "?subject=" + encodeURIComponent(subject) + 
                         "&body=" + encodeURIComponent(body);
-    
+
                     var hiddenLink = document.getElementById("hiddenMailtoLink");
                     hiddenLink.setAttribute("href", mailtoLink);
                     hiddenLink.click();
@@ -125,22 +123,20 @@
                 }
             }
         });
-    
+
         document.getElementById("sendEmailShort").addEventListener("change", function() {
             if (this.checked) {
                 var fromEmail = document.getElementById("fromEmailShort").value;
                 var toEmail = document.getElementById("toEmailShort").value;
-    
+
                 if (fromEmail && toEmail) {
                     var subject = "Priority Mail";
-                    var body = "Hello,\n\nToday, I found my wings.\n\n" +
-                        "This is what I saw:\n\n" + 
-                        url('img1/grain.png'); 
-    
+                    var body = "Hello,\n\nToday, I found my wings.\n\nThis is what I saw:\n\n<img src='img1/grain.png'/>";  // Correct image URL format
+
                     var mailtoLink = "mailto:" + toEmail + 
                         "?subject=" + encodeURIComponent(subject) + 
                         "&body=" + encodeURIComponent(body);
-    
+
                     var hiddenLink = document.getElementById("hiddenMailtoLink");
                     hiddenLink.setAttribute("href", mailtoLink);
                     hiddenLink.click();

@@ -11,8 +11,9 @@ h1 {
     font-size: 120px;
     font-weight: 450;
     letter-spacing: -8px;
-    margin-top: -65px;
-    margin-bottom: -60px;
+    line-height: 95px;
+    margin-top: 15px;
+    margin-bottom: -5px;
 }
 
 .image-container {
@@ -29,7 +30,7 @@ h1 {
 }
 
 .image-container img {
-    width: 70%;
+    width: 55%;
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -59,7 +60,7 @@ h1 {
     }
 
     .image-container img {
-        width: 50%;
+        width: 35%;
         height: auto;
     }
 }
@@ -70,7 +71,8 @@ h1 {
     }
 
     .image-container img {
-        width: 35%;
+        width: 25%;
         height: auto;
+        padding: 5px;
     }
 }

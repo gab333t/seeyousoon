@@ -65,6 +65,7 @@ a{
     bottom: 10px;
     right: -400px;
     animation: moveTrain 16s linear infinite;
+    pointer-events: none;
 }
 
 @keyframes moveTrain {
@@ -115,6 +116,11 @@ a{
     html, body {
         margin-top: -5px;
         margin-right: -9px;
+    }
+    .home {
+        display: block;
+        margin-left: auto;
+        margin-bottom: -20px;
     }
     .train {
         bottom: 24px;

@@ -36,7 +36,6 @@ h1 {
     transform: scale(1.1);
 }
 
-/* Text that will appear in the top right corner */
 #hover-text {
     position: fixed;
     top: 20px;

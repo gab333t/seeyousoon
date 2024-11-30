@@ -42,6 +42,7 @@ h2 {
   background-color: transparent;
   cursor: pointer;
   padding: 20px;
+  bottom: 8px;
   transition: transform 0.2s ease;
 }
 

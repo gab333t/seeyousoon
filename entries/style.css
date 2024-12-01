@@ -233,6 +233,7 @@ h3 {
         background-color: black;
         background-image: url(imgi/backgroundSSmall.png);
         background-size: 400px;
+        margin-top: -0.5px;
     }
 
     .image-container img {
@@ -250,7 +251,7 @@ h3 {
 
     .marquee {
         margin-top: -15px;
-        padding: 2.5px 2px;
+        padding: 3px 2px;
     }
 
     #hover-text {

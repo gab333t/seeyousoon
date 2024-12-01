@@ -177,7 +177,7 @@ em {
         width: 90%;
         max-width: 100%;
         margin-bottom: 8px;
-        letter-spacing: -1px;
+        letter-spacing: -0.3px;
     }
     .degular-small {
         font-size: 16px;

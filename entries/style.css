@@ -1,72 +1,75 @@
 body {
     line-height: 2.5;
-    margin-left: 20px;
-    background-color: gray;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
     background-image: url(imgi/backgroundSLarge.png);
     background-size: 1440px;
     background-repeat: no-repeat;
     background-position: fixed;
-    transition: background-color 0.5s ease;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 h1 {
     color: white;
     font-family: "Space Grotesk", sans-serif;
-    font-size: 120px;
-    font-weight: 450;
-    letter-spacing: -8px;
-    line-height: 95px;
-    margin-top: 5px;
+    font-size: 18vw;
+    font-weight: 650;
+    letter-spacing: -10px;
+    line-height: 14vw;
     margin-bottom: 5px;
-    margin-right: 5px;
+    margin-top: 90px;
+    width: 80%;
     padding: 15px;
-    display: inline-block;
+    display: none;
+    position: absolute;
+    left: 57%;
+    transform: translateX(-50%);
+    z-index: 5;
 }
 
 h3 {
     font-family: "Raleway", sans-serif;
     color: white;
     letter-spacing: 0.5px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 550;
-    margin-top: -25px;
+    margin-top: 0;  
     margin-bottom: 5px;
+    padding-top: 5px;
     margin-left: 20px;
 }
 
-.header {
-    display: inline-block;
+
+.marquee {
     background-color: black;
-    padding: 2px;
-    margin-left: 2px;
-    margin-top: 15px;
+    padding: 1px 5px;
+    width: 100%;
+    display: inline-block;
+}
+
+.marquee a {
+    color: white;
+    text-decoration: none;
 }
 
 #hover-text {
-    position: fixed;
-    top: 20px;
+    position: absolute;
     right: 20px;
-    font-family: "Space Grotesk", sans-serif;
-    color: black;
-    background-color: white;
-    display: inline-block;
-    padding: 10px 20px;
+    top: 0;
+    margin-top: 4px;
+    font-family: "Raleway", sans-serif;
+    color: white;
     font-size: 20px;
-    font-weight: 400;
-    letter-spacing: -0.8px;
-    border-radius: 5px;
+    font-weight: 550;
+    letter-spacing: 0.5px;
     z-index: 10;
     pointer-events: none;
 }
 
-.darken {
-    background-color: #000;
-}
-
 .image-container {
     position: relative;
-    margin-top: 20px;
+    margin-top: 80px;
+    filter: drop-shadow(0 0 0.3rem rgb(0, 0, 0));
 }
 
 .image-container a {
@@ -86,58 +89,58 @@ h3 {
 }
 
 #usps {
-    top: 120px;
-    left: 680px;
+    top: 210px;
+    left: 690px;
 }
 
 #lsd {
-    top: 230px;
+    top: 300px;
     left: 550px;
 }
 
 #tour {
-    top: 360px;
+    top: 470px;
     left: 1179px;
 }
 
 #nett {
-    top: 420px;
-    left: 1090px;
+    top: 520px;
+    left: 1100px;
 }
 
 #camera {
-    top: 370px;
-    left: 240px;
+    top: 460px;
+    left: 265px;
 }
 
 #kafka {
-    top: 270px;
-    left: 672px;
+    top: 330px;
+    left: 680px;
 }
 
 #wonder {
-    top: 240px;
+    top: 340px;
     left: 1120px;
 }
 
 #guy {
-    top: 110px;
+    top: 210px;
     left: 1160px;
 }
 
 #health {
-    top: 270px;
-    left: 155px;
+    top: 370px;
+    left: 170px;
 }
 
 #light {
-    top: 160px;
-    left: 220px;
+    top: 260px;
+    left: 240px;
 }
 
 #sxs {
-    top: 360px;
-    left: 565px;
+    top: 440px;
+    left: 595px;
 }
 
 @media (max-width: 800px) {
@@ -145,17 +148,24 @@ h3 {
         background-image: url(imgi/backgroundSMedium.png);
         background-size: 800px;
     }
+
     h1 {
-        font-size: 70px;
-        font-weight: 420;
-        letter-spacing: -5.25px;
-        line-height: 60px;
+        font-size: 20vw;
+        font-weight: 520;
+        letter-spacing: -8px;
+        line-height: 17vw;
+        margin-top: 120px;
+        width: 86%;
+        left: 54%;
     }
 
     h3 {
-        font-size: 15px;
-        font-weight: 525;
-        margin-left: 5px;
+        font-size: 16px;
+    }
+
+    #hover-text {
+        font-size: 14px;
+        margin-top: 8.5px;
     }
 
     .image-container img {
@@ -163,38 +173,38 @@ h3 {
     }
 
     #usps {
-        top: 140px;
-        left: 560px;
+        top: 160px;
+        left: 580px;
     }
     
     #lsd {
-        top: 260px;
-        left: 210px;
+        top: 290px;
+        left: 220px;
     }
     
     #tour {
-        top: 220px;
-        left: 540px;
+        top: 240px;
+        left: 580px;
     }
     
     #nett {
-        top: 380px;
-        left: 550px;
+        top: 390px;
+        left: 570px;
     }
     
     #camera {
-        top: 350px;
-        left: 215px;
+        top: 375px;
+        left: 235px;
     }
     
     #kafka {
         top: 290px;
-        left: 580px;
+        left: 570px;
     }
     
     #wonder {
-        top: 230px;
-        left: 120px;
+        top: 260px;
+        left: 150px;
     }
     
     #guy {
@@ -203,18 +213,18 @@ h3 {
     }
     
     #health {
-        top: 310px;
-        left: 130px;
+        top: 350px;
+        left: 150px;
     }
     
     #light {
-        top: 150px;
+        top: 175px;
         left: 210px;
     }
     
     #sxs {
         top: 350px;
-        left: 470px;
+        left: 500px;
     }
 }
 
@@ -222,22 +232,6 @@ h3 {
     body {
         background-image: url(imgi/backgroundSSmall.png);
         background-size: 400px;
-    }
-    h1 {
-        font-size: 30px;
-        font-weight: 480;
-        letter-spacing: -4px;
-        line-height: 20px;
-        margin-right: 50px;
-    }
-
-    h3 {
-        font-size: 10px;
-        font-weight: 500;
-        line-height: 22px;
-        margin-top: -1px;
-        margin-left: 4px;
-        margin-right: 90px;
     }
 
     .image-container img {

@@ -1,26 +1,3 @@
-
 body {
-    margin: 30px;
-    display: flex;
-    /* This centers our sketch horizontally. */
-    justify-content: center;
-    /* This centers our sketch vertically. */
-    align-items: center;
-    color: midnightblue;
-  }
-  /* i'm using the z index to move the slider on top of the container */
-  .container {
-    z-index: 0;
-    display:  flex;
-    font-family: 'Lora', serif;
-    font-size:  10vw;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    letter-spacing: 1px;
-  }
-  canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  background-color: white;
+}

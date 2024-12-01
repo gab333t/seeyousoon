@@ -6,7 +6,6 @@ body {
     background-size: 1440px;
     background-repeat: no-repeat;
     background-position: fixed;
-    overflow: hidden;
 }
 
 h1 {
@@ -50,6 +49,7 @@ h3 {
 .marquee a {
     color: white;
     text-decoration: none;
+    pointer-events: auto;
 }
 
 #hover-text {
@@ -160,12 +160,12 @@ h3 {
     }
 
     h3 {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     #hover-text {
         font-size: 14px;
-        margin-top: 8.5px;
+        margin-top: 6px;
     }
 
     .image-container img {
@@ -238,58 +238,77 @@ h3 {
         width: 45px;
     }
 
+    h1 {
+        font-size: 0px;
+        display: none;
+    }
+
+    h3 {
+        font-size: 11px;
+    }
+
+    .marquee {
+        margin-top: -15px;
+        padding: 0.5px 2px;
+    }
+
+    #hover-text {
+        font-size: 0px;
+        display: none;
+    }
+
     #usps {
         top: 120px;
-        left: 190px;
+        left: 210px;
     }
     
     #lsd {
         top: 290px;
-        left: 90px;
+        left: 110px;
     }
     
     #tour {
         top: 220px;
-        left: 180px;
+        left: 200px;
     }
     
     #nett {
         top: 330px;
-        left: 130px;
+        left: 150px;
     }
     
     #camera {
-        top: 380px;
-        left: 180px;
+        top: 390px;
+        left: 210px;
     }
     
     #kafka {
-        top: 200px;
-        left: 100px;
+        top: 210px;
+        left: 130px;
     }
     
     #wonder {
-        top: 370px;
-        left: 90px;
+        top: 380px;
+        left: 130px;
     }
     
     #guy {
         top: 260px;
-        left: 140px;
+        left: 160px;
     }
     
     #health {
         top: 140px;
-        left: 80px;
+        left: 120px;
     }
     
     #light {
         top: 160px;
-        left: 140px;
+        left: 170px;
     }
     
     #sxs {
         top: 290px;
-        left: 190px;
+        left: 210px;
     }
 }

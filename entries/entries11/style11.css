@@ -55,13 +55,12 @@ body {
     }
 }
 
-/* Home button styles */
 .home-button {
   position: fixed;
   top: 20px;
   left: 20px;
-  z-index: 10000; /* Make sure it stays above the scrolling content */
-  width: 50px; /* Set the size of the button */
+  z-index: 10000; 
+  width: 50px;
   height: 50px; 
   background-image: url('https://cdn-icons-png.flaticon.com/512/61/61972.png');
   background-size: contain; 

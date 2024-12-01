@@ -154,6 +154,38 @@ em {
     cursor: pointer;
 }
 
+img {
+    pointer-events: none;
+}
+
+.poster {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+.tote {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.wall {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.sticker {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
 @media (max-width: 770px) {
     .cormorant-garamond-light {
         margin-left: 7vw;
@@ -198,6 +230,23 @@ em {
         max-width: 85%;
         line-height: 36px;
     }
+
+    .poster {
+        width: 70%;
+    }
+    
+    .tote {
+        width: 50%;
+    }
+    
+    .wall {
+        width: 75%;
+    }
+    
+    .sticker {
+        width: 85%;
+    }
+
 }
 
 .marquee {

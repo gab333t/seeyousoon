@@ -1,12 +1,13 @@
 body {
     line-height: 2.5;
     margin-left: 20px;
-    background-color:white;
+    background-color: gray;
     background-image: url(imgi/backgroundSLarge.png);
     background-size: 1440px;
     background-repeat: no-repeat;
     background-position: fixed;
     transition: background-color 0.5s ease;
+    overflow: scroll;
 }
 
 h1 {
@@ -75,7 +76,7 @@ h3 {
 }
 
 .image-container img {
-    width: 90px;
+    width: 95px;
     height: auto;
     transition: transform 0.2s ease;
 }
@@ -90,38 +91,38 @@ h3 {
 }
 
 #lsd {
-    top: 220px;
-    left: 560px;
+    top: 230px;
+    left: 550px;
 }
 
 #tour {
-    top: 320px;
-    left: 1120px;
+    top: 360px;
+    left: 1179px;
 }
 
 #nett {
-    top: 380px;
-    left: 1050px;
+    top: 420px;
+    left: 1090px;
 }
 
 #camera {
-    top: 340px;
-    left: 250px;
+    top: 370px;
+    left: 240px;
 }
 
 #kafka {
-    top: 290px;
+    top: 270px;
     left: 672px;
 }
 
 #wonder {
-    top: 210px;
-    left: 1150px;
+    top: 240px;
+    left: 1120px;
 }
 
 #guy {
     top: 110px;
-    left: 1080px;
+    left: 1160px;
 }
 
 #health {
@@ -135,8 +136,8 @@ h3 {
 }
 
 #sxs {
-    top: 350px;
-    left: 575px;
+    top: 360px;
+    left: 565px;
 }
 
 @media (max-width: 800px) {
@@ -158,83 +159,80 @@ h3 {
     }
 
     .image-container img {
-        width: 90px;
+        width: 60px;
     }
 
     #usps {
-        top: 120px;
-        left: 20px;
-    }
-    
-    #lsd {
-        top: 220px;
+        top: 140px;
         left: 560px;
     }
     
+    #lsd {
+        top: 260px;
+        left: 210px;
+    }
+    
     #tour {
-        top: 320px;
-        left: 500px;
+        top: 220px;
+        left: 540px;
     }
     
     #nett {
         top: 380px;
-        left: 650px;
+        left: 550px;
     }
     
     #camera {
-        top: 340px;
-        left: 250px;
+        top: 350px;
+        left: 215px;
     }
     
     #kafka {
         top: 290px;
-        left: 672px;
+        left: 580px;
     }
     
     #wonder {
-        top: 210px;
-        left: 400px;
+        top: 230px;
+        left: 120px;
     }
     
     #guy {
-        top: 110px;
-        left: 600px;
+        top: 260px;
+        left: 490px;
     }
     
     #health {
-        top: 270px;
-        left: 155px;
+        top: 310px;
+        left: 130px;
     }
     
     #light {
-        top: 160px;
-        left: 220px;
+        top: 150px;
+        left: 210px;
     }
     
     #sxs {
         top: 350px;
-        left: 575px;
+        left: 470px;
     }
 }
 
-@media (max-width: 500px) {
-    html, body {
-        overflow: hidden;
-    }
+@media (max-width: 400px) {
     body {
         background-image: url(imgi/backgroundSSmall.png);
-        background-size: 500px;
+        background-size: 400px;
     }
     h1 {
-        font-size: 70px;
+        font-size: 30px;
         font-weight: 480;
         letter-spacing: -4px;
-        line-height: 50px;
+        line-height: 20px;
         margin-right: 50px;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 10px;
         font-weight: 500;
         line-height: 22px;
         margin-top: -1px;
@@ -242,15 +240,62 @@ h3 {
         margin-right: 90px;
     }
 
-    .about-btn {
-        width: 30px;
-    }
-
     .image-container img {
-        width: 80px;
+        width: 45px;
     }
 
-    #hover-text {
-        display: none;
+    #usps {
+        top: 120px;
+        left: 190px;
+    }
+    
+    #lsd {
+        top: 290px;
+        left: 90px;
+    }
+    
+    #tour {
+        top: 220px;
+        left: 180px;
+    }
+    
+    #nett {
+        top: 330px;
+        left: 130px;
+    }
+    
+    #camera {
+        top: 380px;
+        left: 180px;
+    }
+    
+    #kafka {
+        top: 200px;
+        left: 100px;
+    }
+    
+    #wonder {
+        top: 370px;
+        left: 90px;
+    }
+    
+    #guy {
+        top: 260px;
+        left: 140px;
+    }
+    
+    #health {
+        top: 140px;
+        left: 80px;
+    }
+    
+    #light {
+        top: 160px;
+        left: 140px;
+    }
+    
+    #sxs {
+        top: 290px;
+        left: 190px;
     }
 }

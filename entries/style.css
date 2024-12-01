@@ -230,6 +230,7 @@ h3 {
 
 @media (max-width: 400px) {
     body {
+        background-color: black;
         background-image: url(imgi/backgroundSSmall.png);
         background-size: 400px;
     }
@@ -249,7 +250,7 @@ h3 {
 
     .marquee {
         margin-top: -15px;
-        padding: 0.5px 2px;
+        padding: 3px 4px;
     }
 
     #hover-text {

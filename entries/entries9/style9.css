@@ -8,6 +8,7 @@ body {
     height: 100vh;
     flex-direction: row;
     transition: background 3s ease-in-out;
+    overflow-x: hidden;
 }
 
 .home-button {
@@ -43,6 +44,12 @@ h3 {
     max-width: 500px;
 }
 
+em {
+    font-variation-settings: "wght" 750;
+    letter-spacing: 0.7px;
+    font-style: normal;
+}
+
 p {
     height: 300px;
     width: 300px;
@@ -58,9 +65,11 @@ p {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        overflow-x: visible;
     }
 
     h1 {
+        font-size: 82px;
         margin-left: 0;
         margin-top: 75px;
         text-align: center;
@@ -70,15 +79,36 @@ p {
     p {
         margin-left: 0;
         margin-right: 0;
+        margin-top: 180px;
+        position: fixed;
     }
 
     h3 {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 20px;
+        font-size: 17px;
+        line-height: 22px;
+        margin-left: 20vw;
+        margin-right: 20vw;
+        margin-top: 330px;
         text-align: left;
         max-width: none;
-        width: 80%;
+        width: auto;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 78px;
+    }
+    p {
+        margin-top: 170px;
+    }
+    h3 {
+        font-size: 15.5px;
+        line-height: 20.5px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 

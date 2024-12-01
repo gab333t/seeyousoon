@@ -17,20 +17,18 @@ h1 {
 }
 
 .image-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
+    position: relative;  /* Relative positioning for absolute positioning of children */
     margin-top: 20px;
 }
 
 .image-container a {
     display: block;
     text-align: center;
-    position: relative;
+    position: absolute; /* This allows specific positioning of each link */
 }
 
 .image-container img {
-    width: 28%;
+    width: 100px;
     height: auto;
     transition: transform 0.2s ease;
 }
@@ -54,6 +52,61 @@ h1 {
     pointer-events: none;
 }
 
+#usps {
+    top: 50px;
+    left: 500px;
+}
+
+#lsd {
+    top: 50px;
+    left: 200px;
+}
+
+#tour {
+    top: 50px;
+    left: 350px;
+}
+
+#nett {
+    top: 200px;
+    left: 50px;
+}
+
+#camera {
+    top: 200px;
+    left: 200px;
+}
+
+#kafka {
+    top: 200px;
+    left: 350px;
+}
+
+#wonder {
+    top: 350px;
+    left: 50px;
+}
+
+#guy {
+    top: 350px;
+    left: 200px;
+}
+
+#health {
+    top: 350px;
+    left: 350px;
+}
+
+#light {
+    top: 350px;
+    left: 350px;
+}
+
+#sxs {
+    top: 350px;
+    left: 500px;
+}
+
 @media (max-width: 800px) {
     h1 {
         font-size: 70px;
@@ -66,7 +119,7 @@ h1 {
     }
 
     .image-container img {
-        width: 35%;
+        width: 90px;
         height: auto;
     }
 
@@ -84,16 +137,66 @@ h1 {
         margin-right: 150px;
     }
     .image-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: (2, 1fr);
     }
 
     .image-container img {
-        width: 25%;
+        width: 80px;
         height: auto;
-        padding: 5px;
+        padding: 3px;
     }
 
     #hover-text {
-        display: block;
+        display: none;
+    }
+
+    #usps {
+        top: 10px;
+        left: 10px;
+    }
+
+    #lsd {
+        top: 10px;
+        left: 90px;
+    }
+
+    #tour {
+        top: 10px;
+        left: 170px;
+    }
+
+    #nett {
+        top: 130px;
+        left: 10px;
+    }
+
+    #camera {
+        top: 130px;
+        left: 90px;
+    }
+
+    #kafka {
+        top: 130px;
+        left: 170px;
+    }
+
+    #wonder {
+        top: 240px;
+        left: 10px;
+    }
+
+    #guy {
+        top: 240px;
+        left: 90px;
+    }
+
+    #light {
+        top: 240px;
+        left: 170px;
+    }
+
+    #sxs {
+        top: 350px;
+        left: 10px;
     }
 }

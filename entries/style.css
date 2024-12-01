@@ -55,6 +55,12 @@ h1 {
 }
 
 @media (max-width: 800px) {
+    h1 {
+        font-size: 70px;
+        font-weight: 420;
+        letter-spacing: -5.25px;
+        line-height: 60px;
+    }
     .image-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -70,6 +76,13 @@ h1 {
 }
 
 @media (max-width: 500px) {
+    h1 {
+        font-size: 55px;
+        font-weight: 450;
+        letter-spacing: -4px;
+        line-height: 50px;
+        margin-right: 150px;
+    }
     .image-container {
         grid-template-columns: 1fr;
     }

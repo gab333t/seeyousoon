@@ -163,8 +163,8 @@ em {
         font-weight: 425;
     }
     .degular-title {
-        font-size: 55px;
-        line-height: 45px;
+        font-size: 60px;
+        line-height: 48px;
         margin-right: 25px;
         font-variation-settings: 'ital' 0, 'opsz' 40, 'wght' 260;
         margin-bottom: 8px;
@@ -185,6 +185,7 @@ em {
         font-size: 16px;
         line-height: 17px;
         margin-bottom: 8px;
+        letter-spacing: -0.1px;
     }
     .degular-small-footer {
         font-size: 16px;
@@ -192,9 +193,10 @@ em {
         margin-bottom: 16px;
     }
     .degular-subhead {
-        font-size: 45px;
+        font-size: 38px;
         line-height: 50px;
-        max-width: 450px;
+        max-width: 85%;
+        line-height: 36px;
     }
 }
 

@@ -2,52 +2,262 @@ body {
     background-image: url('https://www.cameronsworld.net/img/content/2/bg.png');
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-    margin: 0; 
-    position: relative; 
-    cursor: url('img7/oldcursor.webp'), auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
 }
 
-.ufo-container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+html, body {
+    cursor: url("img7/torocursor.png") 32 32, auto;
 }
 
-.ufo-gif {
-    width: 300px; 
-    height: auto; 
-    margin: 0 10px; 
+#ufo1, #ufo2, #ufo3, #star, #flower1, #flower2, #flower3, #flower4, #flower5, #flower6, 
+#cat1, #cat2, #cat3, #milk, #bunny1, #bunny2, #bunny3 {
+    position: absolute;
 }
 
+#ufo1 {
+    top: 10%;
+    left: 80%;
+    width: 200px;
+    height: auto;
+}
+
+#ufo2 {
+    top: 20%;
+    left: 50%;
+    width: 120px;
+    height: auto;
+}
+
+#ufo3 {
+    top: 30%;
+    left: 80%;
+    width: 100px;
+    height: auto;
+}
+
+#star {
+    top: 5%;
+    right: 10%;
+    width: 50px;
+    height: auto;
+}
+
+#flower1 {
+    top: 250px;
+    left: -30px;
+    width: 160px;
+    height: auto;
+}
+
+#flower2 {
+    top: 550px;
+    left: -10px;
+    width: 120px;
+    height: auto;
+}
+
+#flower3 {
+    top: 60%;
+    left: 40%;
+    width: 80px;
+    height: auto;
+}
+
+#flower4 {
+    top: 70%;
+    left: 50%;
+    width: 80px;
+    height: auto;
+}
+
+#flower5 {
+    top: 560px;
+    left: 60px;
+    width: 170px;
+    height: auto;
+}
+
+#flower6 {
+    top: 430px;
+    left: 840px;
+    width: 100px;
+    height: auto;
+}
+
+#cat1 {
+    top: 560px;
+    left: 1060px;
+    width: 250px;
+    height: auto;
+}
+
+#cat2 {
+    top: 640px;
+    left: 860px;
+    width: 190px;
+    height: auto;
+}
+
+#cat3 {
+    top: 550px;
+    left: 500px;
+    width: 170px;
+    height: auto;
+}
+
+#milk {
+    top: 420px;
+    left: 1200px;
+    width: 290px;
+    height: auto;
+}
+
+#bunny1 {
+    top: 60px;
+    left: 360px;
+    width: 220px;
+    height: auto;
+}
+
+#bunny2 {
+    top: 70px;
+    left: 580px;
+    width: 170px;
+    height: auto;
+}
+
+#bunny3 {
+    top: 0px;
+    left: 350px;
+    width: 450px;
+    height: auto;
+}
+
+/* Text styling for h1 */
 .tiny5-regular {
     font-family: "Tiny5", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 50px;
-    position: relative; 
+    position: relative;
     color: white;
+    text-align: center;
 }
 
+/* Position for Earth gif */
 .earth-gif {
     position: absolute;
-    top: 20px; 
+    top: 20px;
     left: 20px;
 }
 
+/* Media Query for Smaller Screens (768px or less) */
 @media (max-width: 768px) {
-    .ufo-container {
-        flex-direction: column; 
-        align-items: center; 
+    #ufo1 {
+        top: 15%;
+        left: 10%;
+        width: 80px;
     }
     
-    .ufo-gif {
-        margin: 20px 0; 
+    #ufo2 {
+        top: 25%;
+        left: 45%;
+        width: 90px;
     }
-    
+
+    #ufo3 {
+        top: 35%;
+        left: 75%;
+        width: 80px;
+    }
+
+    #star {
+        top: 5%;
+        left: 5%;
+        width: 40px;
+    }
+
+    #flower1 {
+        top: 45%;
+        left: 15%;
+        width: 70px;
+    }
+
+    #flower2 {
+        top: 50%;
+        left: 25%;
+        width: 70px;
+    }
+
+    #flower3 {
+        top: 55%;
+        left: 35%;
+        width: 70px;
+    }
+
+    #flower4 {
+        top: 60%;
+        left: 45%;
+        width: 70px;
+    }
+
+    #flower5 {
+        top: 65%;
+        left: 55%;
+        width: 70px;
+    }
+
+    #flower6 {
+        top: 70%;
+        left: 65%;
+        width: 70px;
+    }
+
+    #cat1 {
+        top: 25%;
+        left: 10%;
+        width: 80px;
+    }
+
+    #cat2 {
+        top: 35%;
+        left: 35%;
+        width: 80px;
+    }
+
+    #cat3 {
+        top: 45%;
+        left: 60%;
+        width: 80px;
+    }
+
+    #milk {
+        top: 35%;
+        right: 5%;
+        width: 80px;
+    }
+
+    #bunny1 {
+        top: 50%;
+        right: 25%;
+        width: 70px;
+    }
+
     .tiny5-regular {
-        margin-bottom: 50px; 
+        font-size: 40px;
+        margin-bottom: 50px;
     }
+
+    .earth-gif {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 400px) {
 }

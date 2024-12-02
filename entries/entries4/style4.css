@@ -1,8 +1,8 @@
 body {
   background-color: yellow;
   line-height: 0.45px;
-  margin: 0; /* Remove any default margin */
-  padding: 0; /* Remove any default padding */
+  margin: 0; 
+  padding: 0; 
 }
 
 h2 {
@@ -74,7 +74,6 @@ h5 {
   left: 55px; 
 }
 
-/* Responsive adjustments */
 @media (max-width: 1040px) {
   h2 {
       font-size: 175px;
@@ -125,6 +124,4 @@ h5 {
   .home {
     margin-top: -5px;
   }
-
-
 }

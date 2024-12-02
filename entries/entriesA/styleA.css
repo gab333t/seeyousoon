@@ -1,11 +1,71 @@
 body {
   background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   color: white;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 180px;
+  font-weight: 650;
+  letter-spacing: -8px;
+  line-height: 150px;
+  margin-bottom: 5px;
+  margin-top: 50px;
+  width: 100%;
 }
 
 h3 {
   color: white;
+  font-family: "Raleway", sans-serif;
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: 550;
+  margin-top: 0;  
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+.marquee {
+  background-color: white;
+  padding: 0;
+  width: 100%;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.marquee a {
+  color: white;
+  text-decoration: none;
+  pointer-events: auto;
+  display: block;
+  position: relative;
+  padding: 5px 10px;
+}
+
+.marquee a:hover {
+  cursor: pointer;
+}
+
+.marquee-text {
+  color: black;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 130px;
+    font-weight: 600;
+    letter-spacing: -8px;
+    line-height: 110px;
+    margin-bottom: 5px;
+    margin-top: -5px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
 }

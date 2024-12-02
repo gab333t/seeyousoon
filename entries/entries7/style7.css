@@ -1,5 +1,6 @@
 body {
     background-image: url('img7/background.png');
+    background-color: black;
     display: flex;
     flex-direction: column;
     margin: 0;

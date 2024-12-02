@@ -199,64 +199,72 @@ h5 {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 40px;
+    width: 110px;
     height: auto;
 }
     
 @media (max-width: 410px) {
 
+    #ufo1, #ufo2, #ufo3, #star, #flower1, #flower2, #flower3, #flower4, #flower5, #flower6, 
+    #cat1, #cat2, #cat3, #milk, #bunny1, #bunny2, #bunny3 {
+        pointer-events: none;
+    }
+
     h1 {
-        font-weight: 400;
-        font-size: 10px;
+        font-weight: 300;
+        font-size: 38px;
         position: absolute;
         top: 250px;
-        left: 14px;
+        left: 30px;
+        line-height: 34px;
         width: 280px;
+        letter-spacing: 0.4px;
     }
     
     h2 {
-        font-size: 8px;
+        font-size: 12px;
         font-weight: 400px;
         position: absolute;
-        top: 4px;
-        left: 140px;
-        width: 140px;
+        top: 5px;
+        left: 86px;
+        width: 80px;
+        line-height: 14px;
     }
     
     h3 {
-        font-size: 8px;
+        font-size: 14px;
         font-weight: 450px;
         position: absolute;
-        top: 500px;
-        left: 40px;
-        width: 290px;
+        text-align: left;
+        top: 190px;
+        left: 30px;
+        width: 160px;
     }
     
     h4 {
-        font-size: 8px;
+        font-size: 14px;
         font-weight: 400px;
         letter-spacing: 0.2px;
         position: absolute;
         top: 420px;
-        left: 19px;
-        width: 230px;
+        left: 70px;
+        width: 125px;
     }
     
     h5 {
-        font-size: 8px;
+        font-size: 17px;
         font-weight: 440px;
         position: absolute;
-        top: 200px;
-        left: 10px;
+        top: 370px;
+        left: 160px;
         width: 230px;
     }
 
     .earth-gif {
-        top: 10px;
+        top: 12px;
         left: 10px;
-        width: 10px;
+        width: 70px;
         height: auto;
-        position: absolute;
     }
 
     #ufo1 {
@@ -265,21 +273,21 @@ h5 {
     }
     
     #ufo2 {
-        top: 180px;
-        left: 180px;
+        top: 100px;
+        left: 10px;
         width: 110px;
     }
 
     #ufo3 {
-        top: 200px;
-        left: 40px;
-        width: 80px;
+        top: 150px;
+        left: 180px;
+        width: 90px;
     }
 
     #star {
-        top: 200px;
+        top: 120px;
         left: 110px;
-        width: 90px;
+        width: 70px;
     }
 
     #flower1 {
@@ -311,15 +319,15 @@ h5 {
     }
 
     #flower6 {
-        top: 400px;
-        left: 270px;
+        top: 450px;
+        left: 250px;
         width: 40px;
     }
 
     #cat1 {
-        top: 25px;
-        left: 10px;
-        width: 80px;
+        top: 240px;
+        left: 210px;
+        width: 40px;
     }
 
     #cat2 {
@@ -329,9 +337,8 @@ h5 {
     }
 
     #cat3 {
-        top: 45px;
-        left: 60px;
-        width: 80px;
+        display: block;
+        width: 0px;
     }
 
     #milk {
@@ -356,10 +363,5 @@ h5 {
         top: 0px;
         left: 140px;
         width: 200px;
-    }
-
-    .tiny5-regular {
-        font-size: 40px;
-        margin-bottom: 50px;
     }
 }

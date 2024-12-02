@@ -2,11 +2,7 @@ body {
     background-image: url('https://www.cameronsworld.net/img/content/2/bg.png');
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-    position: relative;
     overflow: hidden;
 }
 
@@ -14,84 +10,145 @@ html, body {
     cursor: url("img7/torocursor.png") 32 32, auto;
 }
 
+h1 {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 270px;
+    left: 390px;
+    width: 600px;
+}
+
+h2 {
+    font-family: "Pixelify Sans", sans-serif;
+    color: yellow;
+    font-size: 21px;
+    font-weight: 400px;
+    position: absolute;
+    text-align: left;
+    top: 8px;
+    left: 140px;
+    width: 140px;
+}
+
+h3 {
+    font-family: "Pixelify Sans", sans-serif;
+    color: rgb(234, 39, 39);
+    font-size: 22px;
+    font-weight: 450px;
+    position: absolute;
+    text-align: right;
+    top: 500px;
+    left: 950px;
+    width: 290px;
+}
+
+h4 {
+    font-family: "Pixelify Sans", sans-serif;
+    color: rgb(56, 56, 250);
+    font-size: 20px;
+    font-weight: 450px;
+    position: absolute;
+    text-align: right;
+    top: 420px;
+    left: 170px;
+    width: 230px;
+}
+
+h5 {
+    font-family: "Pixelify Sans", sans-serif;
+    color: rgb(21, 182, 21);
+    font-size: 28px;
+    font-weight: 440px;
+    position: absolute;
+    top: 200px;
+    left: 930px;
+    width: 230px;
+}
+
+
 #ufo1, #ufo2, #ufo3, #star, #flower1, #flower2, #flower3, #flower4, #flower5, #flower6, 
-#cat1, #cat2, #cat3, #milk, #bunny1, #bunny2, #bunny3, #mbanner {
+#cat1, #cat2, #cat3, #milk, #bunny1, #bunny2, #bunny3 {
     position: absolute;
 }
 
 #ufo1 {
-    top: 80px;
-    left: 1200px;
+    top: 35px;
+    left: 1170px;
     width: 240px;
     height: auto;
 }
 
 #ufo2 {
     top: 80px;
-    left: 1100px;
-    width: 180px;
+    left: 920px;
+    width: 200px;
     height: auto;
 }
 
 #ufo3 {
-    top: 30%;
-    left: 80%;
-    width: 250px;
+    top: 230px;
+    left: 1150px;
+    width: 220px;
     height: auto;
 }
 
 #star {
-    top: 10px;
-    left: 1340px;
+    top: 140px;
+    left: 1130px;
     width: 80px;
     height: auto;
 }
 
 #flower1 {
-    top: 250px;
-    left: -30px;
-    width: 160px;
+    top: 220px;
+    left: -40px;
+    width: 190px;
     height: auto;
 }
 
 #flower2 {
-    top: 550px;
-    left: 2px;
-    width: 120px;
+    top: 480px;
+    left: 30px;
+    width: 160px;
     height: auto;
 }
 
 #flower3 {
-    top: 340px;
-    left: 500px;
+    top: 260px;
+    left: 420px;
     width: 120px;
     height: auto;
 }
 
 #flower4 {
-    top: 70%;
-    left: 50%;
-    width: 80px;
+    top: 540px;
+    left: 740px;
+    width: 200px;
     height: auto;
 }
 
 #flower5 {
-    top: 560px;
-    left: 140px;
+    top: 580px;
+    left: 120px;
     width: 170px;
     height: auto;
 }
 
 #flower6 {
-    top: 280px;
-    left: 790px;
+    top: 340px;
+    left: 860px;
     width: 100px;
     height: auto;
 }
 
 #cat1 {
     top: 560px;
-    left: 610px;
+    left: 500px;
     width: 250px;
     height: auto;
 }
@@ -104,8 +161,8 @@ html, body {
 }
 
 #cat3 {
-    top: 580px;
-    left: 80px;
+    top: 590px;
+    left: 310px;
     width: 170px;
     height: auto;
 }
@@ -138,30 +195,13 @@ html, body {
     height: auto;
 }
 
-.mbanner {
-    top: 100px;
-    left: 100px;
-    width: 500px;
-    height: auto;
-}
-
-.tiny5-regular {
-    font-family: "Tiny5", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-    position: relative;
-    color: white;
-    text-align: center;
-}
-
 .earth-gif {
     position: absolute;
     top: 20px;
     left: 20px;
 }
-
-@media (max-width: 768px) {
+    
+@media (max-width: 400px) {
     #ufo1 {
         top: 15%;
         left: 10%;
@@ -175,8 +215,8 @@ html, body {
     }
 
     #ufo3 {
-        top: 35%;
-        left: 75%;
+        top: 200px;
+        left: 1000px;
         width: 80px;
     }
 
@@ -261,7 +301,4 @@ html, body {
         top: 10px;
         left: 10px;
     }
-}
-
-@media (max-width: 400px) {
 }

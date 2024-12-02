@@ -30,7 +30,7 @@ h2 {
     font-weight: 400px;
     position: absolute;
     text-align: left;
-    top: 8px;
+    top: 4px;
     left: 140px;
     width: 140px;
 }
@@ -49,13 +49,14 @@ h3 {
 
 h4 {
     font-family: "Pixelify Sans", sans-serif;
-    color: rgb(56, 56, 250);
+    color: rgb(83, 83, 241);
     font-size: 20px;
-    font-weight: 450px;
+    font-weight: 400px;
+    letter-spacing: 0.2px;
     position: absolute;
     text-align: right;
     top: 420px;
-    left: 170px;
+    left: 190px;
     width: 230px;
 }
 
@@ -69,7 +70,6 @@ h5 {
     left: 930px;
     width: 230px;
 }
-
 
 #ufo1, #ufo2, #ufo3, #star, #flower1, #flower2, #flower3, #flower4, #flower5, #flower6, 
 #cat1, #cat2, #cat3, #milk, #bunny1, #bunny2, #bunny3 {
@@ -201,95 +201,155 @@ h5 {
     left: 20px;
 }
     
-@media (max-width: 400px) {
+@media (max-width: 410px) {
+    h1 {
+        font-weight: 400;
+        font-size: 10px;
+        position: absolute;
+        top: 250px;
+        left: 14px;
+        width: 280px;
+    }
+    
+    h2 {
+        font-size: 8px;
+        font-weight: 400px;
+        position: absolute;
+        top: 4px;
+        left: 140px;
+        width: 140px;
+    }
+    
+    h3 {
+        font-size: 8px;
+        font-weight: 450px;
+        position: absolute;
+        top: 500px;
+        left: 40px;
+        width: 290px;
+    }
+    
+    h4 {
+        font-size: 8px;
+        font-weight: 400px;
+        letter-spacing: 0.2px;
+        position: absolute;
+        top: 420px;
+        left: 19px;
+        width: 230px;
+    }
+    
+    h5 {
+        font-size: 8px;
+        font-weight: 440px;
+        position: absolute;
+        top: 200px;
+        left: 10px;
+        width: 230px;
+    }
+
     #ufo1 {
-        top: 15%;
-        left: 10%;
+        top: 15px;
+        left: 10px;
         width: 80px;
     }
     
     #ufo2 {
-        top: 25%;
-        left: 45%;
+        top: 25px;
+        left: 45px;
         width: 90px;
     }
 
     #ufo3 {
         top: 200px;
-        left: 1000px;
+        left: 100px;
         width: 80px;
     }
 
     #star {
-        top: 5%;
-        left: 5%;
+        top: 5px;
+        left: 5px;
         width: 40px;
     }
 
     #flower1 {
-        top: 45%;
-        left: 15%;
+        top: 45px;
+        left: 15px;
         width: 70px;
     }
 
     #flower2 {
-        top: 50%;
-        left: 25%;
+        top: 50px;
+        left: 25px;
         width: 70px;
     }
 
     #flower3 {
-        top: 55%;
-        left: 35%;
+        top: 55px;
+        left: 35px;
         width: 70px;
     }
 
     #flower4 {
-        top: 60%;
-        left: 45%;
+        top: 60px;
+        left: 45px;
         width: 70px;
     }
 
     #flower5 {
-        top: 65%;
-        left: 55%;
+        top: 65px;
+        left: 55px;
         width: 70px;
     }
 
     #flower6 {
-        top: 70%;
-        left: 65%;
+        top: 70px;
+        left: 65px;
         width: 70px;
     }
 
     #cat1 {
-        top: 25%;
-        left: 10%;
+        top: 25px;
+        left: 10px;
         width: 80px;
     }
 
     #cat2 {
-        top: 35%;
-        left: 35%;
+        top: 35px;
+        left: 35px;
         width: 80px;
     }
 
     #cat3 {
-        top: 45%;
-        left: 60%;
+        top: 45px;
+        left: 60px;
         width: 80px;
     }
 
     #milk {
-        top: 35%;
-        right: 5%;
+        top: 35px;
+        left: 5px;
         width: 80px;
     }
 
     #bunny1 {
-        top: 50%;
-        right: 25%;
+        top: 50px;
+        left: 25px;
         width: 70px;
+    }
+
+    #bunny2 {
+        top: 90px;
+        left: 80px;
+        width: 170px;
+        height: auto;
+    }
+    
+    #bunny3 {
+        top: 0px;
+        left: 50px;
+        width: 150px;
+        height: auto;
     }
 
     .tiny5-regular {
@@ -300,5 +360,8 @@ h5 {
     .earth-gif {
         top: 10px;
         left: 10px;
+        width: 10px;
+        height: auto;
+        position: absolute;
     }
 }

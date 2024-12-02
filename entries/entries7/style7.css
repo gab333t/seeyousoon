@@ -15,35 +15,35 @@ html, body {
 }
 
 #ufo1, #ufo2, #ufo3, #star, #flower1, #flower2, #flower3, #flower4, #flower5, #flower6, 
-#cat1, #cat2, #cat3, #milk, #bunny1, #bunny2, #bunny3 {
+#cat1, #cat2, #cat3, #milk, #bunny1, #bunny2, #bunny3, #mbanner {
     position: absolute;
 }
 
 #ufo1 {
-    top: 10%;
-    left: 80%;
-    width: 200px;
+    top: 80px;
+    left: 1200px;
+    width: 240px;
     height: auto;
 }
 
 #ufo2 {
-    top: 20%;
-    left: 50%;
-    width: 120px;
+    top: 80px;
+    left: 1100px;
+    width: 180px;
     height: auto;
 }
 
 #ufo3 {
     top: 30%;
     left: 80%;
-    width: 100px;
+    width: 250px;
     height: auto;
 }
 
 #star {
-    top: 5%;
-    right: 10%;
-    width: 50px;
+    top: 10px;
+    left: 1340px;
+    width: 80px;
     height: auto;
 }
 
@@ -56,15 +56,15 @@ html, body {
 
 #flower2 {
     top: 550px;
-    left: -10px;
+    left: 2px;
     width: 120px;
     height: auto;
 }
 
 #flower3 {
-    top: 60%;
-    left: 40%;
-    width: 80px;
+    top: 340px;
+    left: 500px;
+    width: 120px;
     height: auto;
 }
 
@@ -77,35 +77,35 @@ html, body {
 
 #flower5 {
     top: 560px;
-    left: 60px;
+    left: 140px;
     width: 170px;
     height: auto;
 }
 
 #flower6 {
-    top: 430px;
-    left: 840px;
+    top: 280px;
+    left: 790px;
     width: 100px;
     height: auto;
 }
 
 #cat1 {
     top: 560px;
-    left: 1060px;
+    left: 610px;
     width: 250px;
     height: auto;
 }
 
 #cat2 {
     top: 640px;
-    left: 860px;
+    left: 1090px;
     width: 190px;
     height: auto;
 }
 
 #cat3 {
-    top: 550px;
-    left: 500px;
+    top: 580px;
+    left: 80px;
     width: 170px;
     height: auto;
 }
@@ -118,14 +118,14 @@ html, body {
 }
 
 #bunny1 {
-    top: 60px;
-    left: 360px;
+    top: 100px;
+    left: 310px;
     width: 220px;
     height: auto;
 }
 
 #bunny2 {
-    top: 70px;
+    top: 90px;
     left: 580px;
     width: 170px;
     height: auto;
@@ -138,7 +138,13 @@ html, body {
     height: auto;
 }
 
-/* Text styling for h1 */
+.mbanner {
+    top: 100px;
+    left: 100px;
+    width: 500px;
+    height: auto;
+}
+
 .tiny5-regular {
     font-family: "Tiny5", sans-serif;
     font-weight: 400;
@@ -149,14 +155,12 @@ html, body {
     text-align: center;
 }
 
-/* Position for Earth gif */
 .earth-gif {
     position: absolute;
     top: 20px;
     left: 20px;
 }
 
-/* Media Query for Smaller Screens (768px or less) */
 @media (max-width: 768px) {
     #ufo1 {
         top: 15%;

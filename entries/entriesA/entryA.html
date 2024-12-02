@@ -27,19 +27,53 @@
     
     <h1>SEE YOU SOON.</h1>
 
-    <div class="bodytext">
-    <h3>This harmonic collection is an archive of several different stickers I came across in the streets of New York.</h3>
-
-    <h3>Having grown up in Queens and Manhattan my entire life, street art has shaped a lot</h3>
-
-    <h3>Taking advantage of a digital workspace, I 
-        To show that art doesn't have to be appreciated only within gallery walls. Something we might gloss over every day can be reinterpreted into something beauty. 
+    <h3>
+        This harmonic collection is an archive of the various different stickers I've come across and documented in New York City.
+        <br><br>
+        Having grown up in Queens and Brookyln, graffiti stickers have been a prominent part of my life. They're something that I've passed by countless times on my walks to school, and something that's influenced my current tastes and design aesthetics. I wish to use this collection to pay homage to that art form, and to
+        show others the beauty that form can hold.
+        <br><br>
+        Each entry is based on the sticker I documented for that week, and reinterpreted to take advantage of the digital interface I'm working with. Whether it be for 
+        its aeshtetics, fonts, or overall message, each entry is meant to vary from one another. Like the stickers it pulls its inpiration from, they each carry an identity of its own, unique to itself and able to stand on its own. To document the original sticker as well, each icon has been referenced and redrawn by me digitally.
+        <br><br>
+        My goal is to start a conversation of what art is and isn't worthy of our attention. We pass by these street stickers every day, yet rarely do they leave a lasting
+        impression on us; even I find myself guilty of that sometimes. But in an otherwise hectic city, they can be a quick flash of color, not found within gallery walls but placed unsuspectingly in our commutes. Stopping for just a moment, or noting it down, can be the start of something beautiful. Each and every art form can inspire us to make something amazing, and that is what I aim to demonstrate in this website – through graffiti stickers.
+        <br><br>
+        You are free to explore this site however you like; play with it, be curious about it, try to destroy it even. Whatever the case may be, I hope that you can take
+        away something new from this site. 
+        <br><br>
     </h3>
 
-    <h3>Each entry is meant to vary from one another, whether it be for its aesthetics, fonts, or overall message. Like the stickers it pulls its inpiration from, each entry carries an identity of its own, unique to itself..</h3>
-
-    <h3>But above all else, I hope that you are You are free to explore this site however you wish; play with it, be curious about it, try to destroy it. Whatever </h3>
+    <div class="row">
+        <div class="column">
+          <img src="imgA/stickers1.png" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="imga/stickers2.png" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="imgA/stickers3.png" alt="Mountains" style="width:100%">
+        </div>
     </div>
+
+    <h3>
+        <br>
+        <a href="#" onclick="copyToClipboard()">Click to share.</a> See you soon.
+        <br><br><br>
+    </h3>
+
+    <script>
+        function copyToClipboard() {
+          const url = "https://gab333t.github.io/seeyousoon/entries/index.html";
+          const textarea = document.createElement("textarea"); 
+          textarea.value = url; 
+          document.body.appendChild(textarea);
+          textarea.select(); 
+          document.execCommand("copy");
+          document.body.removeChild(textarea); 
+          alert("Link copied to clipboard.");
+        }
+    </script>
 
 </body>
 </html>

@@ -1,52 +1,113 @@
 body {
-    background-color: rgb(226, 227, 244);
-    color: rgb(106, 6, 54);
-}
-
-@media (max-width: 850px) {
-  body {
-    background-color: rgb(106, 6, 54);
-    color: rgb(226, 227, 244);
-  }
+  background-color: rgb(21, 21, 22);
 }
 
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-.images {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: 20px auto;
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 125px;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  color: rgb(35, 237, 255);
+  letter-spacing: -3px;
+  margin-left: 240px;
+  margin-bottom: -155px;
+  margin-top: 10px;
 }
 
-.images img {
-  width: 350px;
+h2 {
+  font-family: "Dosis", sans-serif;
+  color: rgb(35, 237, 255);
+  font-size: 120px;
+  font-weight: 300;
+  margin-left: 240px;
+  margin-bottom: -25px;
+}
+
+h5 {
+  font-family: "Raleway", sans-serif;
+  color: rgb(240, 241, 242);
+  font-size: 24px;
+  font-weight: 350;
+  line-height: 32px;
+  margin-left: 50px;
+}
+
+.home {
+  position: absolute;
+  color: #23edff;
+  width: 80px;
   height: auto;
+  bottom: 10px;
+  left: 10px;
 }
 
-.chakra-petch-light {
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-  }
-  
-.chakra-petch-semibold {
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    text-align: center;
-  }
+.eye-container {
+  position: fixed;
+  top: 95px;
+  left: 65px;
+  z-index: 9999;
+}
 
-  h1 {
-    font-size: 125px;
-    line-height: 1;
-  }
+.eye {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  background-color: rgb(21, 21, 22);
+  border-radius: 50%;
+  box-shadow: none;
+}
 
-  h5 {
-    font-size: 30px;
-    line-height: 1.25;
+.pupil {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(35, 237, 255);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+}
+
+.eye-background {
+  position: absolute;
+  margin-top: -155px;
+  top: 90px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  z-index: -1;
+}
+
+.glitch-column {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  font-family: "Courier New", Courier, monospace;
+  color: #23edff;
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 0.9;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: all 0.1s ease-in-out;
+  z-index: 9999;
+  animation: glitchAnim 0.2s infinite linear;
+}
+
+@keyframes glitchAnim {
+  0% {
+    text-shadow: 1px 0px 0px rgba(0, 255, 255, 0.6), -1px 0px 0px rgba(0, 255, 255, 0.6);
   }
+  50% {
+    text-shadow: -2px 2px 0px rgba(0, 255, 255, 0.8), 2px -2px 0px rgba(0, 255, 255, 0.8);
+  }
+  100% {
+    text-shadow: 1px 0px 0px rgba(0, 255, 255, 0.6), -1px 0px 0px rgba(0, 255, 255, 0.6);
+  }
+}

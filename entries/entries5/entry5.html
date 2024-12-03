@@ -10,34 +10,80 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
 
 </head>
     <body>
 
-        <div class="images">
-            <img src="img5/CameraRight.png" alt="">
-            <img src="img5/CameraDown.png" alt="">
-            <img src="img5/CameraLeft.png" alt="">
-            <img src="img5/CameraUp.png" alt="">
-        </div>
+        <a href="https://gab333t.github.io/seeyousoon/entries/index.html">
+            <img src="img5/home.png" alt="Pixel home icon, Click to return to home page." class="home">
+        </a>
 
-        <h1 class="chakra-petch-semibold">We Are ALWAYS Watching.</h1>
-        <h5 class="chakra-petch-light">You already knew that, didn't you?<br>But we know you won't be going anywhere else.<br>We'll always hold a monopoly over your life.</h5>
-        <h5 class="chakra-petch-light">How many people already know your identity?<br>Don't cookies sound so comforting when you click accept?<br>When was the last time your data wasn't sold?<br> <br>Mass targeted, mass marketed, mass profitted.<br>In the digital age, consumers have also become the product.<br>And we can always anticipate to SEE YOU SOON.<br>
-        <h5 class="chakra-petch-semibold">DON'T WAIT<br>THE TIME TO ACT IS NOW<br><a href="https://trustedfuture.org/take-back-control-of-your-personal-data/">TAKE BACK CONTROL OF YOUR DATA</a></h5>
-       
-        <div class="images">
-            <img src="img5/CameraRight.png" alt="">
-            <img src="img5/CameraDown.png" alt="">
-            <img src="img5/CameraLeft.png" alt="">
-            <img src="img5/CameraUp.png" alt="">
+        <h1>UNDER</h1>
+        <h2>SURVEILLANCE</h2>
+
+        <h5>You are being monitored at all times.<br>But we know you won't be going anywhere else.<br>We'll always hold a monopoly over your life.<br><br>
+            How many people already know your identity?<br>Don't cookies sound so comforting when you click accept?<br>When was the last time your data wasn't sold?<br><br>
+            Mass targeted, mass marketed, mass profited.<br>In the digital age, consumers have also become the product.<br><a href="https://trustedfuture.org/take-back-control-of-your-personal-data/">TAKE BACK CONTROL OF YOUR DATA</a></h5>
+        </h5>
+        <h5></h5>
+
+        <div id="glitchColumn" class="glitch-column"></div>
+
+        <div class="eye-container">
+            <div class="eye">
+                <div class="pupil"></div>
+            </div>
+            <img src="img5/camerabg.png" alt="Background cover for eye container, light blue." class="eye-background">
         </div>
 
         <script>
+ 
+            alert("ACCETP COOKIES ACcept cookies :) We are yor frieeeends");
 
-            window.alert("ACCEPT COOKIES");
+            const binaryList = ['0101001101101 01000101', '010001 010011 01010101', '01011010 111 010111', '01000101 01010011 01010011', '01010101 01010011 01011001', '01001110 01010011 01001111', '01101110 000111011 1011', '01100100 0110 11 001101101001110'];
+            const glitchColumn = document.getElementById('glitchColumn');
 
+            function generateGlitch() {
+                const randomBinary = binaryList[Math.floor(Math.random() * binaryList.length)];
+                glitchColumn.innerText = randomBinary;
+            }
+
+            setInterval(generateGlitch, 100);
+
+            function moveColumn() {
+                const maxX = window.innerWidth - 200; 
+                const maxY = window.innerHeight - 100;
+
+                const randomX = Math.floor(Math.random() * maxX);
+                const randomY = Math.floor(Math.random() * maxY);
+
+                glitchColumn.style.left = `${randomX}px`;
+                glitchColumn.style.top = `${randomY}px`;
+            }
+
+            setInterval(moveColumn, 1000);
+
+            document.addEventListener('mousemove', function(event) {
+                const eye = document.querySelector('.eye');
+                const pupil = document.querySelector('.pupil');
+                const eyeRect = eye.getBoundingClientRect();
+                
+                const eyeCenterX = eyeRect.left + eyeRect.width / 2;
+                const eyeCenterY = eyeRect.top + eyeRect.height / 2;
+
+                const angle = Math.atan2(event.clientY - eyeCenterY, event.clientX - eyeCenterX);
+                const distance = Math.min(eyeRect.width / 4, eyeRect.height / 4); 
+
+                const pupilX = Math.cos(angle) * distance;
+                const pupilY = Math.sin(angle) * distance;
+
+                pupil.style.transform = `translate(-50%, -50%) translate(${pupilX}px, ${pupilY}px)`;
+            });
         </script>
         
     </body>

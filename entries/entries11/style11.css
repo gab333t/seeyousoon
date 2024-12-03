@@ -28,7 +28,6 @@ body {
   
 .scroll p {
     font-size: 5em;
-    
     color: rgb(209, 209, 209);
     font-weight: bold;
     margin-bottom: 0;
@@ -96,5 +95,13 @@ body {
 @media (max-width: 950px) {
     .scroll p{
         font-size: 3em;
+        line-height: 7px;
+    }
+}
+
+@media (max-width: 420px) {
+    .scroll p{
+        font-size: 2em;
+        line-height: 4px;
     }
 }

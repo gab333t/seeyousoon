@@ -11,6 +11,13 @@ body {
     animation: fadeIn 4s forwards;
 }
 
+@font-face {
+    font-family: 'Beausite';
+    src: url('/entries/entries2/fonts2/BeausiteClassicWebTrial-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 html, body {
     margin: 0; 
     height: 100%;
@@ -31,13 +38,13 @@ html, body {
 }
 
 h2{
+    font-family: 'Beausite', sans-serif;
     text-decoration: wavy;
     text-align: right;
     color: #05f129;
     font-size: 45px;
     font-style: italic;
     letter-spacing: -0.5px;
-    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
 h4{
@@ -108,6 +115,7 @@ a{
 @media (max-width: 450px) {
     h2 {
         font-size: 33px;
+        letter-spacing: -1.2px;
     }
     h4 {
         font-size: 11px;

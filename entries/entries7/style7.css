@@ -5,10 +5,7 @@ body {
     flex-direction: column;
     margin: 0;
     overflow: hidden;
-}
-
-html, body {
-    cursor: url("img7/torocursor.png") 32 32, auto;
+    cursor: url('img7/torocursor.png'), auto;
 }
 
 h1 {

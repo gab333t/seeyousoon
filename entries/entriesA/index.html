@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See You Soon – Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgi/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="marquee">
+    <a href="https://gab333t.github.io/seeyousoon/entries/entriesA/entryA.html" id="about-link">
+        <h3 class="marquee-text">ABOUT</h3>
+    </a>
+</div>
+
+<div class="marquee-container">
+    <h1 class="title">SEE YOU SOON.</h1>
+    <div id="hover-text" class="hover-text"></div>
+</div>
+
+<div class="image-container">
+    <a href="https://gab333t.github.io/seeyousoon/entries/entries1/entry1.html" class="image-link">
+        <img id="usps" src="imgi/Entry1Icon.png" alt="ENTRY ONE – Priority Mail"> 
+    </a>
+    <a href="https://gab333t.github.io/seeyousoon/entries/entries2/entry2.html" class="image-link">
+        <img id="lsd" src="imgi/Entry2Icon.png" alt="ENTRY TWO – l:s:d">
+    </a>
+    <a href="https://gab333t.github.io/seeyousoon/entries/entries3/entry3.html" class="image-link">
+        <img id="tour" src="imgi/Entry3Icon.png" alt="ENTRY THREE – WORLD TOUR 20XX">
+    </a>
+    <a href="https://gab333t.github.io/seeyousoon/entries/entries4/entry4.html" class="image-link">
+        <img id="nett" src="imgi/Entry4Icon.png" alt="ENTRY FOUR – Nett hier">
+    </a>
+    <a href="https://gab333t.github.io/seeyousoon/entries/entries5/entry5.html" class="image-link">
+        <img id="camera" src="imgi/Entry5Icon.png" alt="ENTRY FIVE – Under Surveillance">
+    </a>
+    <a href="https://gab333t.github.io/seeyousoon/entries/entries6/entry6.html" class="image-link">
+        <img id="kafka" src="imgi/Entry6Icon.png" alt="ENTRY SIX – AMERICA">
+    </a>
+    <a href="https://gab333t.github.io/seeyousoon/entries/entries7/entry7.html" class="image-link">
+        <img id="wonder" src="imgi/Entry7Icon.png" alt="ENTRY SEVEN – Our Beautiful Amazing Reality">
+    </a>
+    <a href="https://gab333t.github.io/seeyousoon/entries/entries8/entry8.html" class="image-link">
+        <img id="guy" src="imgi/Entry8Icon.png" alt="ENTRY EIGHT – SYS News">
+    </a>
+    <a href="https://gab333t.github.io/seeyousoon/entries/entries9/entry9.html" class="image-link">
+        <img id="health" src="imgi/Entry9Icon.png" alt="ENTRY NINE – I Feel:">
+    </a>
+    <a href="https://gab333t.github.io/seeyousoon/entries/entries10/entry10.html" class="image-link">
+        <img id="light" src="imgi/Entry10Icon.PNG" alt="ENTRY TEN - lone dark room">
+    </a>
+    <a href="https://gab333t.github.io/seeyousoon/entries/entries11/entry11.html" class="image-link">
+        <img id="sxs" src="imgi/Entry11Icon.png" alt="ENTRY ELEVEN – Scumbags & Superstars">
+    </a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $("#usps, #lsd, #tour, #nett, #camera, #kafka, #wonder, #guy, #health, #light, #sxs").draggable();
+
+        $(".image-link").hover(function() {
+            var hoverText = $(this).find("img").attr("alt");
+            $("#hover-text").text(hoverText);
+        }, function() {
+            $("#hover-text").text(""); 
+        });
+
+        $("#about-link").hover(function() {
+            $(".title").show();
+        }, function() {
+            $(".title").hide();
+        });
+    });
+</script>
+
+</body>
+</html>

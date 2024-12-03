@@ -7,6 +7,16 @@ body {
     overflow: hidden;
 }
 
+.graphic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 570px;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
 .home-button {
     position: absolute;
     top: -1px;
@@ -78,6 +88,10 @@ body {
         line-height: 7px;
     }
 
+    .graphic {
+        width: 520px;
+    }
+
     .home-button {
         width: 100px;
         height: 100px;
@@ -92,6 +106,10 @@ body {
     .scroll p{
         font-size: 2em;
         line-height: 4px;
+    }
+
+    .graphic {
+        width: 360px;
     }
 
     .home-button {

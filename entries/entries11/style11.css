@@ -1,6 +1,9 @@
 body {
     background-color: #ea0a0a;
-    font-family: 'Arial', sans-serif;
+    background-image: url(img11/sxsbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     overflow: hidden;
 }
 
@@ -13,6 +16,9 @@ body {
   
 .scroll {
     white-space: nowrap;
+    font-family: "Chivo", sans-serif;
+    font-style: italic;
+    text-shadow: 0 0 5px rgb(183, 93, 93);
 }
   
 .scroll div {
@@ -22,7 +28,8 @@ body {
   
 .scroll p {
     font-size: 5em;
-    color: white;
+    
+    color: rgb(209, 209, 209);
     font-weight: bold;
     margin-bottom: 0;
     line-height: 10px;
@@ -84,4 +91,10 @@ body {
   width: 100%;
   height: 100%;
   color: transparent; 
+}
+
+@media (max-width: 950px) {
+    .scroll p{
+        font-size: 3em;
+    }
 }

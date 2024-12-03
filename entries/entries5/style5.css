@@ -37,6 +37,10 @@ h5 {
   margin-left: 50px;
 }
 
+a {
+  color:rgb(35, 237, 255);
+}
+
 .home {
   position: absolute;
   color: #23edff;
@@ -111,3 +115,68 @@ h5 {
     text-shadow: 1px 0px 0px rgba(0, 255, 255, 0.6), -1px 0px 0px rgba(0, 255, 255, 0.6);
   }
 }
+
+@media (max-width: 980px) {
+  h1 {
+    font-size: 75px;
+    margin-left: 160px;
+  }
+  h2 {
+    margin-top: 130px;
+    font-size: 70px;
+    margin-left: 162px;
+  }
+  h5 {
+    font-size: 21px;
+    font-weight: 330;
+    line-height: 30px;
+    margin-left: 18px;
+  }
+  .eye-background {
+    width: 140px;
+    height: 140px;
+  }
+  .eye {
+    width: 73px;
+    height: 73px;
+    margin-top: -18px;
+  }
+  .pupil {
+    width: 24px;
+    height: 24px;
+  }
+  .eye-container {
+    top: 90px;
+    left: 50px;
+  }
+}
+
+  @media (max-width: 450px) {
+    h1 {
+      font-size: 60px;
+      margin-left: 18px;
+      margin-top: 70px;
+    }
+
+    h2 {
+      font-size: 60px;
+      margin-left: 18px;
+      margin-bottom: 10px;
+    }
+    h5 {
+      font-size: 15px;
+      line-height: 19px;
+      letter-spacing: 1px;
+      margin-left: 39px;
+      width: 220px;
+    }
+    .eye-container {
+      position: absolute;
+      align-items: center;
+      top: 730px;
+      left: 54px;
+    }
+    .home {
+      top: 4px;
+    }
+  }

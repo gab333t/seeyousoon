@@ -18,6 +18,12 @@ h1 {
   margin-left: 13px;
 }
 
+
+.yellow {
+  background-color: yellow;
+  color: black;
+}
+
 h3 {
   color: white;
   font-family: "Raleway", sans-serif;

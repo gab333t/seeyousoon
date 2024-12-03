@@ -73,6 +73,19 @@
           document.body.removeChild(textarea); 
           alert("Link copied to clipboard.");
         }
+
+        let body = document.body;
+        let headline = document.querySelector("h1");
+        let headlines = document.querySelectorAll("h1");
+
+        console.log(headline);
+        console.log(headlines);
+
+        function addYellow() {
+          headline.classList.toggle("yellow");
+        }
+
+        headline.addEventListener("click", addYellow);
     </script>
 
 </body>

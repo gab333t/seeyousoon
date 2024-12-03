@@ -7,9 +7,20 @@ body {
     overflow: hidden;
 }
 
+.home-button {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    z-index: 1; 
+    width: 140px;
+    height: 140px; 
+    cursor: pointer;
+  }
+
 .container {
     display: flex;
     align-items: center;
+    margin-left: 73px;
     height: 100vh;
     rotate: 80deg;
 }
@@ -27,11 +38,11 @@ body {
 }
   
 .scroll p {
-    font-size: 5em;
-    color: rgb(209, 209, 209);
+    font-size: 6.5em;
+    color: #d1d1d1;
     font-weight: bold;
     margin-bottom: 0;
-    line-height: 10px;
+    line-height: 0.01em;
 }
   
 .RightToLeft {
@@ -61,41 +72,19 @@ body {
     }
 }
 
-.home-button {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 10000; 
-  width: 50px;
-  height: 50px; 
-  background-image: url('https://cdn-icons-png.flaticon.com/512/61/61972.png');
-  background-size: contain; 
-  background-repeat: no-repeat; 
-  background-position: center; 
-}
-
-#home-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none; 
-}
-
-.home-button:hover {
-  opacity: 0.8;
-}
-
-.home-button a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: transparent; 
-}
-
 @media (max-width: 950px) {
     .scroll p{
         font-size: 3em;
         line-height: 7px;
+    }
+
+    .home-button {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container {
+        margin-left: 40px;
     }
 }
 
@@ -103,5 +92,12 @@ body {
     .scroll p{
         font-size: 2em;
         line-height: 4px;
+    }
+
+    .home-button {
+        width: 120px;
+        height: 120px;
+        top: 2px;
+        left: 2px;
     }
 }

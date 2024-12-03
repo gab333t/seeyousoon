@@ -54,6 +54,7 @@ h2.orbitron-pink:nth-of-type(2) {
     font-weight: 750;
     margin-top: 18px;
     position: relative;
+    left: 13px;
 }
 
 h1 {
@@ -68,12 +69,14 @@ h1 {
 h4 {
     line-height: 20px;
     font-weight: 400;
+    margin-left: 13px;
+    width: 600px;
 }
 
 @media (max-width: 1000px) {
     h1 {
         font-size: 80px;
-        margin-top: 40px;
+        margin-top: 60px;
         line-height: 70px;
     }
 
@@ -116,12 +119,13 @@ h4 {
 
     h2.orbitron-pink:first-of-type {
         font-size: 15px;
-        line-height: 15px;
+        line-height: 16px;
         font-weight: 750;
         margin-top: 18px;
         position: absolute;
         top: -5px;
         left: 60px;
+        width: 260px;
         z-index: 5;
     }
 
@@ -130,18 +134,22 @@ h4 {
         line-height: 0.05;
         font-weight: 750;
         margin-top: 18px;
-        margin-left: 6px;
+        margin-left: -5px;
         position: relative;
     }
 
     .handjet-blue {
+        font-size: 28px;
         margin-left: 10px;
+        font-size: 30px;
+        line-height: 0.1;
     }
 
     h4 {
         font-size: 14px;
-        line-height: 13px;
-        font-weight: 600;
-        margin-left: 5px;
+        line-height: 18px;
+        font-weight: 450;
+        margin-left: 6px;
+        width: 390px;
     }
 }

@@ -5,7 +5,14 @@ body {
     flex-direction: column;
     margin: 0;
     overflow: hidden;
-    cursor: url('img7/torocursor.png'), auto;
+}
+
+html, body {
+    cursor: url('img7/torocursor.ico'), auto;
+}
+
+.ui-draggable-dragging {
+    cursor: url('img7/torocursor.ico'), move;
 }
 
 h1 {

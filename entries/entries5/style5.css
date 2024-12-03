@@ -16,7 +16,7 @@ h1 {
   letter-spacing: -3px;
   margin-left: 240px;
   margin-bottom: -155px;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 h2 {
@@ -25,7 +25,7 @@ h2 {
   font-size: 120px;
   font-weight: 300;
   margin-left: 240px;
-  margin-bottom: -25px;
+  margin-bottom: -15px;
 }
 
 h5 {
@@ -54,7 +54,7 @@ a {
 
 .eye-container {
   position: fixed;
-  top: 95px;
+  top: 109px;
   left: 65px;
   z-index: 9999;
 }

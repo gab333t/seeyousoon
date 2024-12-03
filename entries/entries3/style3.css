@@ -1,4 +1,5 @@
 body {
+    background-color: #03010f;
     background-image: url(img3/background.gif);
     background-position: initial;
     background-size: cover;
@@ -139,10 +140,10 @@ h4 {
     }
 
     .handjet-blue {
-        font-size: 28px;
+        font-size: 24px;
         margin-left: 10px;
         font-size: 30px;
-        line-height: 0.1;
+        line-height: 8px;
     }
 
     h4 {

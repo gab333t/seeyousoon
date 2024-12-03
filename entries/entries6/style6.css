@@ -15,6 +15,25 @@ img {
     height: auto;
 }
 
+img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 5vw;
@@ -25,14 +44,23 @@ h1 {
 
 a {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 20px;
     color: rgb(17, 22, 49);
     background-color: rgb(211, 42, 56);
     text-decoration: none;
     position: absolute;
+    padding: -10px 10px;
+    cursor: pointer;
+}
+
+.home-link {
     bottom: 0px;
     left: 0px;
-    padding: -10px 10px;
+}
+
+.corr-link {
+    top: 0px;
+    right: 0px;
 }
 
 .textmq1, .textmq2, .textmq3 {
@@ -45,6 +73,9 @@ a {
     }
     img {
         width: 39%;
+    }
+    a {
+        font-size: 14px;
     }
     .text, .textmq1, .textmq3 {
         display: none;
@@ -62,6 +93,9 @@ a {
     img {
         width: 45%;
     }
+    a {
+        font-size: 11px;
+    }
     .text, .textmq1, .textmq3 {
         display: none;
     }
@@ -77,6 +111,15 @@ a {
     }
     img {
         width: 60%;
+        
+    }
+    img:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+        animation-iteration-count: 1;
+      }
+    a {
+        font-size: 8px;
     }
     .text, .textmq1, .textmq2 {
         display: none;
